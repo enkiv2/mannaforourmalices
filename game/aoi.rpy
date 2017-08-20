@@ -226,7 +226,7 @@ label aoi_saves:
     play music "music/Infocalypse_-_Imploded_Transcendence.mp3"
     "Aoi directed me toward a plain grey metal door at the end of the clone area."
     "We passed many clones. Among them I saw one that resembled myself. Her eyes, though glazed and unfocused, followed me as I passed."
-    # XXX insert stairwell image
+    scene bg stairwell
     "We went through the door into what looked like a service stairwell."
     aoi "There are no cameras here, but I need to edit the tapes. Stay here."
     "Aoi went up the stairs a few flights."
@@ -235,7 +235,7 @@ label aoi_saves:
     "After a short time, she returned."
     aoi "Ok, I removed the evidence that you were here. We need to leave quick, while the cameras are still blanked out."
     ai "Lead on."
-    # XXX insert outside image
+    scene bg backdoor
     "Aoi led me down the stairs and out some kind of service or emergency exit."
     n "{b}If we had known about this, we wouldn't have had to run past that asthmatic guard.{/b}"
     n "I think we've found out what we need to know. This is probably the last time I'll need to visit this place."
@@ -246,12 +246,12 @@ label aoi_saves:
     aoi "Oh, yeah. You're right. Let's go to... um..."
     aoi "Let's go to the women's locker room for the pool. There aren't any cameras or microphones there, and the pool's closed anyway."
     "I followed Aoi across the campus and through a building with maze-like corridors, which she navigated with ease."
-    # XXX insert image of pool building hallways
+    scene bg pool hallway
     aoi "I used to swim here when I was little. My parents would work in the lab until late, so I was allowed to stay."
     aoi "Nobody asked for the key back, so I still have it."
     "She unlocked an unlabeled door."
     aoi "Come on in."
-    # XXX insert image of women's locker room
+    scene bg locker room
     ai "You know this campus well, don't you?"
     aoi "I was born here."
     aoi "This is the secret. Promise not to tell anybody, okay?"
