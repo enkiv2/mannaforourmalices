@@ -228,3 +228,10 @@ init python:
 ## by a slash.
 
 define build.itch_project = "enkiv2/manna-for-our-malices"
+
+# Disable resize since our art looks even worse when scaled up
+define config.gl_resize = False
+# Number of save slots should be limited to 1, so that users won't save-scum
+define config.quicksave_slots = 1
+define config.autosave_slots = 1
+
