@@ -188,6 +188,11 @@ label dont_look_for_koneko_before_school:
     extend " Bow..."
     extend " Sit"
     play music "music/Infocalypse_-_scathing_frolic.mp3" fadein 5
+    "The teacher took a look at the attendence sheet, muttering to herself."
+    "Teacher" "{size=-3}Hmm... Fujinomiya is absent again... And Umeji...{/size}"
+    n "That is strange... Umeji never misses classes."
+    n "I didn't notice earlier because she's so quiet."
+    n "I wonder if she's sick..."
     "Teacher" "Now, let us quickly review the last chapter."
     "Teacher" "Let me see... We left off with the Genpei War."
     extend " Who can tell me the name of the two eras that this conflict borders?"
@@ -288,7 +293,76 @@ label dont_follow_mimi:
     hide kuroneko
     show aoi hearteyes at right
     aoi "You're not alone, Ai-chan~ I'm here with you~~"
+    n "Where should I eat lunch?"
+    menu:
+        "In the classroom":
+            jump lunch_classroom
+        "In the cafeteria":
+            jump lunch_cafeteria
+        "On the roof":
+            jump lunch_roof
+        "In the library":
+            jump lunch_library
+label lunch_library:
+    comment "XXX fill in lunch_library"
+    jump afternoon_classes
+label lunch_roof:
+    comment "XXX fill in lunch_roof"
+    jump afternoon_classes
+label lunch_cafeteria:
+    comment "XXX fill in lunch_cafeteria"
+    jump afternoon_classes
+label lunch_classroom:
+    "I had lunch in the classroom with Aoi."
+    aoi "Say aaah~"
+    ai "I can feed myself, you know."
+    aoi "I know. But I can feed you, and that's a lot more fun!"
+    "The boxed lunch had hot dogs shaped like octopi, little hearts made of bologna, and very few vegetables."
+    ai "You sure have a protein-heavy diet, don't you?"
+    aoi "My parents say that meat and fat are good for the brain."
+    n "I sure hope so..."
+    ai "Don't you ever feel like you want some vegetables? Or some rice?"
+    aoi "I have some!"
+    "She holds up a small, limp broccoli florette -- the only one in the lunch box. There's also a dollop of rice in one corner."
+    ai "Girl, I don't know how you survive with such an imbalanced diet."
+    "We finished eating. I think most of Aoi's lunch ended up in my stomach. My attempts to fend off her chopsticks were in vain."
     hide aoi
+    jump afternoon_classes
+label afternoon_classes:
+    "The first period after lunch was English."
+    "The bell rang and the teacher came in."
+    "He was pretty young, and a foreigner. His Japanese was shit, but since he was teaching an immersion-oriented English class it wasn't too much of a problem."
+    "English Teacher" "{k=2}Good morning, class!{/k}"
+    "Class" "{k=2}Good morning, sensei{/k}"
+    "English Teacher" "{k=2}Please open your textbooks to page 68. We'll be covering prepositions.{/k}"
+    "Just then, the classroom door creaked open and Umeji slinked in."
+    show misa
+    "English Teacher" "{k=2}Um...{/k} Umeji-san... You're... um... Please sit."
+    misa "Yes."
+    "English Teacher" "{k=2}In English, please{/k}"
+    "Umeji looked disorinted for a moment."
+    misa "Um... {k=2}Yes, teacher.{/k}"
+    "English Teacher" "{k=2}Everyone, please open your books to page 68{/k}"
+    hide misa
+    "Umeji sat slumped at her desk, staring blankly into space for the rest of the period."
+    show mimi at left
+    mimi "Misa-chan, are you alright?"
+    show misa at right
+    misa "I'm... yeah..."
+    mimi "It's just that you never miss class. Are you feeling sick?"
+    misa "No, not sick..."
+    mimi "If you need to go to the nurse's office..."
+    misa "No, I'm fine..."
+    show kuroneko pout
+    kuroneko "Yamada, I don't think she wants you to pry."
+    mimi "I'm just-"
+    kuroneko "You've shown your concern clearly enough. Let her ask for help if she decides she needs it."
+    "Mimi sighed"
+    mimi "Fine."
+    misa "Thank you for being concerned, everyone... I really am OK..."
+    hide kuroneko
+    hide mimi
+    hide misa
     "The rest of the day came and went without incident" # XXX this is crap
     "Finally, the bell rang."
     "I was about to leave until..."
