@@ -224,34 +224,42 @@ label clone_racks:
 
 label aoi_saves:
     play music "music/Infocalypse_-_Imploded_Transcendence.mp3"
+    hide aoi
     "Aoi directed me toward a plain grey metal door at the end of the clone area."
     "We passed many clones. Among them I saw one that resembled myself. Her eyes, though glazed and unfocused, followed me as I passed."
     scene bg stairwell
     "We went through the door into what looked like a service stairwell."
+    show aoi pout
     aoi "There are no cameras here, but I need to edit the tapes. Stay here."
+    hide aoi
     "Aoi went up the stairs a few flights."
     n "{b}Is she calling for guards?{/b}"
     n "I don't think so. The last time, she just stabbed us. If she wanted to get rid of us, thats easier"
     "After a short time, she returned."
+    show aoi pout
     aoi "Ok, I removed the evidence that you were here. We need to leave quick, while the cameras are still blanked out."
     ai "Lead on."
     scene bg backdoor
     "Aoi led me down the stairs and out some kind of service or emergency exit."
     n "{b}If we had known about this, we wouldn't have had to run past that asthmatic guard.{/b}"
     n "I think we've found out what we need to know. This is probably the last time I'll need to visit this place."
+    show aoi pout
     aoi "I should probably explain."
     aoi "I haven't told anybody else this, ever. I'll tell you because you're my very very best friend and I love you, okay, Ai-chan? But don't ever ever tell anybody, okay?"
     ai "I wouldn't snitch on you, Aoi-chan."
     ai "First, should we be doing this so close to the secret exit? There isn't even a keypad on this side."
     aoi "Oh, yeah. You're right. Let's go to... um..."
     aoi "Let's go to the women's locker room for the pool. There aren't any cameras or microphones there, and the pool's closed anyway."
+    hide aoi
     "I followed Aoi across the campus and through a building with maze-like corridors, which she navigated with ease."
     scene bg pool hallway
+    show aoi pout
     aoi "I used to swim here when I was little. My parents would work in the lab until late, so I was allowed to stay."
     aoi "Nobody asked for the key back, so I still have it."
     "She unlocked an unlabeled door."
     aoi "Come on in."
     scene bg locker room
+    show aoi pout
     ai "You know this campus well, don't you?"
     aoi "I was born here."
     aoi "This is the secret. Promise not to tell anybody, okay?"
