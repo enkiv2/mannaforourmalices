@@ -42,9 +42,9 @@ label deliver_printouts:
             jump ask_shironeko_about_yipi
         "Ask her about the O∴S∴S" if knows_about_oss:
             jump ask_shironeko_about_oss
-        "Ask her about the 199X Z-Prize ceremony" if knows_about_missing_lab_notebook:
+        "Ask her about the 1993 Z-Prize ceremony" if knows_about_missing_lab_notebook:
             jump ask_shironeko_about_zprize
-        "Ask her for the submitted papers from the 199X Z-Prize" if knows_aoi_took_lab_notebook:
+        "Ask her for the submitted papers from the 1993 Z-Prize" if knows_aoi_took_lab_notebook:
             jump ask_shironeko_for_zprize_papers
         "Ask her about the code for the keypad lock at Yomiyama Poly's synthetic biology research center" if knows_about_keypad:
             jump ask_shironeko_for_keypad_code
@@ -190,7 +190,7 @@ label ask_shironeko_about_oss:
     comment "XXX inject more stuff"
     jump alien_tech
 label ask_shironeko_about_zprize:
-    ai "You know the 199X Z-Prize ceremony?"
+    ai "You know the 1993 Z-Prize ceremony?"
     shironeko "No?"
     ai "It's the one that officially didn't happen. Because of protests and a bomb threat over human germline experiments."
     shironeko "I'm not familiar with it."
@@ -216,7 +216,7 @@ label ask_shironeko_about_zprize:
     shironeko "Let me tell you about a place I got into recently where the security was actually a challenge."
     jump alien_tech
 label ask_shironeko_for_zprize_papers:
-    ai "There was a Z-Prize ceremony in 199X. Its existence was covered up."
+    ai "There was a Z-Prize ceremony in 1993. Its existence was covered up."
     ai "I have reason to believe that the Yomiyama Polytechnic computers might have copies of the submitted papers."
     ai "Do you figure you could get a copy of the Tomoe paper on clones?"
     shironeko "Hmm... I don't think YomiPoly has great netsec. So, give me a few minutes."
