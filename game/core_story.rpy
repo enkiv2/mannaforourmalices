@@ -180,6 +180,8 @@ label dont_look_for_koneko_before_school:
     kuroneko "She's been doing nothing but eating pocky and sitting at the computer lately. I doubt even Koneko could pick her up now."
     show kuroneko normal at left
     extend "\nWhat she does on there all day is a mystery to me."
+    ai "Maybe she's sore about not having Golden Week off."
+    kuroneko "If that was the case, she wouldn't be skipping the rest of the year too."
     "Teacher" "Alright, settle down."
     stop music
     hide kuroneko
