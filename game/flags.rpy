@@ -4,6 +4,16 @@ define died = False
 $ achievement.register("Stabbed in the back")
 define num_deaths=0
 $ achievement.register("Some chuunibyo BS") # >2 deaths
+define in_2011 = False
+$ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
+# Kuroneko's route unlocks some clues about the mechanisms by which the out of body time warp works.
+# Objects or boundaries can be destroyed; one object shifts the time frame from May Eve 2012 to Halloween 2011,
+# while another stops reincarnation entirely. Having another character get stabbed by the ceremonial knife will bring
+# them into the time loop with you, and allow some state to be persistent with them. The good end involves warping back
+# and forth between Halloween 2011 and May Eve 2012 to set things right (for instance, using knowledge about the 
+# Yakuza group the Fujinomia family is indebted with, gained via their Halloween party) and setting the various 
+# conspiracies against each other before breaking the time loop mechanism. Breaking the mechanism without fixing 
+# all the conspiracies & rendering them harmless causes a bad end.
 
 # Aoi route
 define knows_about_aoi_parents = False
