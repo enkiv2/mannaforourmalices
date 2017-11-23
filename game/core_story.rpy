@@ -495,6 +495,8 @@ label death:
                 n "Jesus fuck. [num_deaths] times? Really?"
             n "People are only supposed to die once, you know!"
     $ num_deaths += 1
+    if altar_destroyed:
+        jump bad_end
     jump rebirth
 
 label rebirth:
@@ -508,4 +510,13 @@ label rebirth:
         n "I didn't expect it to be this soon, though."
     $ died = True
     $ achievement.grant("Stabbed in the back")
+    if in_2011:
+        jump halloween
     jump core_story
+
+label bad_end:
+    scene splash blood two
+    centered "BAD END"
+    $ achievement.grant("Bad end")
+    return
+    

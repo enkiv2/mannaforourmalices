@@ -7,6 +7,7 @@ $ achievement.register("Some chuunibyo BS") # >2 deaths
 define midnight_loop = False
 define in_2011 = False
 $ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
+define halloween_janus_head_inverted = False
 # Kuroneko's route unlocks some clues about the mechanisms by which the out of body time warp works.
 # Objects or boundaries can be destroyed; one object shifts the time frame from May Eve 2012 to Halloween 2011,
 # while another stops reincarnation entirely. Having another character get stabbed by the ceremonial knife will bring
@@ -17,6 +18,8 @@ $ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 201
 # all the conspiracies & rendering them harmless causes a bad end.
 # Good end is a scene at the town's May Day festival. May day festivals would have been considered politically dangerous
 # in Japan for a while, so maybe we can fill in why this one was allowed to exist in backstory.
+define altar_destroyed = False
+$ achievement.register("Bad end")
 $ achievement.register("Tama-ya!")
 $ achievement.register("Complete")
 

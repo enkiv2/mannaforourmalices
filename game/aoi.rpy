@@ -356,5 +356,7 @@ label go_home_early:
     scene bg morning
     scene bg black
     $ midnight_loop = True
+    if in_2011:
+        jump halloween
     jump core_story
     
