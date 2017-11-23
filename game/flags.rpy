@@ -16,6 +16,8 @@ $ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 201
 # all the conspiracies & rendering them harmless causes a bad end.
 # Good end is a scene at the town's May Day festival. May day festivals would have been considered politically dangerous
 # in Japan for a while, so maybe we can fill in why this one was allowed to exist in backstory.
+$ achievement.register("Tama-ya!")
+$ achievement.register("Complete")
 
 # Aoi route
 define knows_about_aoi_parents = False
