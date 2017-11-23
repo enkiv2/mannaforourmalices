@@ -55,5 +55,4 @@ define misa = Character("Umeji Misa", color="#77ff77", image="misa")
 # Misa believes in the divinity of the space brothers because of direct contact (with the tentacle aliens that the YIPI brought, pretending to be space bros)
 
 image side null = "side_null.png"
-define config.side_image_null = "side null"
 
