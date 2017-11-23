@@ -294,6 +294,12 @@ label aoi_saves:
     aoi "My parents are geniuses?"
     ai "Yeah. You never realized? Nobody else has ever done human cloning. This was done before anybody had officially cloned a sheep."
     aoi "Weird."
+    menu:
+        "We should head back to class":
+            jump head_back_to_class
+        "We should play hooky":
+            jump play_hooky
+label head_back_to_class:
     ai "Hey. We should probably get back to school. We'll be in trouble if we miss too much class. Especially you."
     aoi "Oh, yeah. Let's head back."
     $ knows_whole_aoi_story = True
@@ -314,3 +320,41 @@ label aoi_saves:
     ai "The cafeteria, huh?"
     ai "I skipped breakfast, so I'm pretty hungry."
     jump dont_follow_mimi
+label play_hooky:
+    ai "Since we've already skipped morning classes, let's head to the arcade."
+    aoi "Won't we get in trouble?"
+    ai "Says the girl who just exposed illegal government medical experiments."
+    ai "All the public schools have Golden Week off, so the arcade should be full of students today. We can blend in."
+    jump arcade
+label arcade:
+    jump go_home_early
+label go_home_early:
+    scene bg downstairs
+    "Mom" "Hey honey, how was school?"
+    ai "Uneventful!"
+    n "I made it home safely! Fucking finally!"
+    "Mom" "Is hot pot alright for dinner?"
+    ai "I had takoyaki on the way home, so make whatever you like."
+    if midnight_loop == False:
+        n "I wonder whether or not I'll jump back in time again, since I haven't died."
+        n "Though, I guess jumping back in time at midnight will be indistinguishable from dying in my sleep..."
+        n "At least it probably won't hurt this time."
+    ai "I'm beat, so I'm going to go to sleep early."
+    "Mom" "I thought school was uneventful?"
+    ai "They... uh... made us help out with the festival."
+    "Mom" "Oh! Well, that's nice of them. Are you planning to go with Aoi-chan, dear?"
+    ai "Yeah, probably."
+    "Mom" "You might as well get your yukata airing out tonight."
+    if midnight_loop:
+        n "I'll loop again, so I should avoid extra effort."
+    else:
+        n "I might loop again, so I should avoid extra effort."
+    ai "It can wait. I'm really beat."
+    "Mom" "Okay, well don't blame me if you smell like mothballs tomorrow."
+    "Mom" "Goodnight, sueetie."
+    ai "Night, mom"
+    scene bg morning
+    scene bg black
+    $ midnight_loop = True
+    jump core_story
+    

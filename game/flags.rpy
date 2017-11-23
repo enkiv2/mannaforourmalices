@@ -4,6 +4,7 @@ define died = False
 $ achievement.register("Stabbed in the back")
 define num_deaths=0
 $ achievement.register("Some chuunibyo BS") # >2 deaths
+define midnight_loop = False
 define in_2011 = False
 $ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
 # Kuroneko's route unlocks some clues about the mechanisms by which the out of body time warp works.
