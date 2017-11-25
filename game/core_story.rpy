@@ -365,7 +365,7 @@ label afternoon_classes:
     hide kuroneko
     hide mimi
     hide misa
-    "The rest of the day came and went without incident" # XXX this is crap
+    "The rest of the afternoon classes came and went without incident" # XXX this is crap
     "Finally, the bell rang."
     "I was about to leave until..."
     "Teacher" "Akagi."
