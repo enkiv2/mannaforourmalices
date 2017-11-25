@@ -24,6 +24,7 @@ image bg stairwell = "stairwell.png"
 image bg backdoor = "backdoor.png"
 image bg pool hallway = "pool corridors.png"
 image bg locker room = "locker room.png"
+image bg arcade = "arcade.png"
 # Koneko route
 image bg track = "track.png"
 image bg nurse office = "nurse office.png"

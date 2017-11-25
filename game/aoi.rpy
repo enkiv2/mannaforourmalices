@@ -327,6 +327,7 @@ label play_hooky:
     ai "All the public schools have Golden Week off, so the arcade should be full of students today. We can blend in."
     jump arcade
 label arcade:
+    scene bg arcade
     jump go_home_early
 label go_home_early:
     scene bg downstairs
