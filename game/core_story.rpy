@@ -295,6 +295,8 @@ label dont_follow_mimi:
     hide kuroneko
     show aoi hearteyes at right
     aoi "You're not alone, Ai-chan~ I'm here with you~~"
+    if num_deaths < 1:
+        jump lunch_classroom
     n "Where should I eat lunch?"
     menu:
         "In the classroom":
