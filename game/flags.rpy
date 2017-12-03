@@ -52,12 +52,14 @@ define knows_about_clone_racks = False
 # fully disconnected cerebellums instead of hypoxic cerebellums. It will be hard to explain the technical details of the cloning in a way consistent
 # with even yandere-mode Aoi.)
 define knows_whole_aoi_story = False
+define aoi_unstuck_in_time = False
 
 # Kuroneko route
 define knows_about_kuroneko_concert = False
 $ achievement.register("Some Eyes-Wide-Shut MFers")
 define knows_about_kuroneko_books = False
 define knows_about_oss = False
+define kuroneko_unstuck_in_time = False
 
 # Koneko route
 define knows_about_koneko_telepathy = False
@@ -65,6 +67,7 @@ $ achievement.register("Touch telepathy")
 define saw_milpsi_symbol = False
 define knows_about_stargate = False
 define knows_milpsi_shell_co_name = False
+define koneko_unstuck_in_time = False
 
 # Shironeko route
 define knows_about_alien_tech = False
