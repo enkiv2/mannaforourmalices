@@ -9,13 +9,13 @@ label start:
     #quote "DEBUG: [keycode]"
     play music "music/Infocalypse_-_yesterday_the_shadows_grew_again.mp3"
     scene bg black
-    centered "{color=#fff}{cps=10}\"The outrageous is the reasonable, if introduced politely.\"{/cps}{/color}"
-    extend "{color=#fff}{cps=10}\n{space=500}- Charles Fort,{/cps}{/color}"
-    extend "{color=#fff}{cps=10}\n{space=400}The Book of the Damned{/cps}{/color}"
+    centered "{color=#fff}{cps=15}\"The outrageous is the reasonable, if introduced politely.\"{/cps}{/color}"
+    extend "{color=#fff}{cps=15}\n{space=500}- Charles Fort,{/cps}{/color}"
+    extend "{color=#fff}{cps=15}\n{space=400}The Book of the Damned{/cps}{/color}"
     scene bg white with dissolve
     scene bg black with dissolve
-    centered "{color=#fff}{cps=15}In the year 2012, in the small town of Yomiyama, a series of deaths occurred.{/cps}{/color}"
-    extend "{color=#fff}{cps=15}\nDespite investigation, many mysteries remain.{/cps}{/color}"
-    extend "{color=#fff}{cps=15}\nBelow the surface of this town, a great deal of machinery was in motion.{/cps}{/color}"
+    centered "{color=#fff}{cps=20}In the year 2012, in the small town of Yomiyama, a series of deaths occurred.{/cps}{/color}"
+    extend "{color=#fff}{cps=20}\nDespite investigation, many mysteries remain.{/cps}{/color}"
+    extend "{color=#fff}{cps=20}\nBelow the surface of this town, a great deal of machinery was in motion.{/cps}{/color}"
     jump core_story
 
