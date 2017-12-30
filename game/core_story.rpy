@@ -305,12 +305,15 @@ label dont_follow_mimi:
         "In the library":
             jump lunch_library
 label lunch_library:
+    scene bg library
     comment "XXX fill in lunch_library"
     jump afternoon_classes
 label lunch_roof:
+    scene bg roof
     comment "XXX fill in lunch_roof"
     jump afternoon_classes
 label lunch_cafeteria:
+    scene bg cafeteria
     comment "XXX fill in lunch_cafeteria"
     jump afternoon_classes
 label lunch_classroom:
@@ -327,9 +330,12 @@ label lunch_classroom:
     "She holds up a small, limp broccoli florette -- the only one in the lunch box. There's also a dollop of rice in one corner."
     ai "Girl, I don't know how you survive with such an imbalanced diet."
     "We finished eating. I think most of Aoi's lunch ended up in my stomach. My attempts to fend off her chopsticks were in vain."
+    "I can't say I regret it, though. Despite her academic shortcomings, Aoi is a damned good cook."
+    "I wouldn't mind her feeding me for the rest of my life, if not for what it would imply -- and what it would do to my arteries."
     hide aoi
     jump afternoon_classes
 label afternoon_classes:
+    scene bg classroom
     "The first period after lunch was English."
     "The bell rang and the teacher came in."
     "He was pretty young, and a foreigner. His Japanese was shit, but since he was teaching an immersion-oriented English class it wasn't too much of a problem."
