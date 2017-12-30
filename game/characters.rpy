@@ -48,11 +48,5 @@ image mimi pensive = "mimi pensive.png"
 image mimi smug = "mimi smug.png"
 image mimi scoop = "mimi scoop.png"
 
-image side misa = "misa_icon.png"
-define misa = Character("Umeji Misa", color="#77ff77", image="misa")
-# Misa: UFO cultist, appears to be pure / yamato nadeshiko type character
-# UFO cult worships aryan space brothers; cult leader doesn't believe in it & uses cultists as cheap labor
-# Misa believes in the divinity of the space brothers because of direct contact (with the tentacle aliens that the YIPI brought, pretending to be space bros)
-
 image side null = "side_null.png"
 
