@@ -8,6 +8,8 @@ label yakuza_party:
 # "Why the hell is the Fujinomiya debt still in this ledger?! They paid their sixty mil last week. Fix it right now and then go apologize, or you lose another finger!"
 # koneko complains about how icky their brains are / how disgusting it is to connect to someone telepathically
 # none of the girls are wearing a costume, but aoi is wearing cat ears
+    $ debt_erased = True
+    $ achievement.grant("Jubilee")
 label halloween_night:
     if halloween_janus_head_inverted:
         jump halloween

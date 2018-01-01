@@ -1,46 +1,135 @@
+label ritual:
+    "As planned, Kuroneko met us in the convenience store bathroom with dark woolen robes. We put them on and then waited until a crowd of similarly-robed cultists walked past."
+    "We hovered in the back, near the lodge's service door, as the cultists formed a rough ring around the magic circle and Kuroneko took her place in the center."
+    if debt_erased:
+        "Muffled gunshots were audible. The cultists began to break rank."
+        "Father Nikolai" "Stay in the circle!"
+        "Cultist" "But Father, the gangsters--"
+        "Father Nikolai" "So long as you continue the ritual, even if you perish, your soul shall persist in space and be ressurrected infinitely. If the ritual fails, your soul shall be forfeit!"
+        "More shots rang out, clearer now."
+    "Fother Nikolai" "Begin the chant."
+    "Kuroneko readied her violin and began playing."
+    "Cultists" "I call you to life, oh mysterious forces!"
+    if debt_erased:
+        "More shots rang out, and a note was cut off too sharply. She regained her tempo."
+    "Cultists" "Drowned in the obscure depths"
+    "Cultists" "Of the creative spirit, timid"
+    "The wind picked up, sending dried leaves and bits of grass into slow waltzes"
+    if debt_erased:
+        "Smoke began to fill the air."
+    "Cultists" "Shadows of life, to you I bring audacity!"
+    ai "That's the cue -- the end of the first stanza."
+    "I ducked into the lodge and grabbed the knife from the altar. It felt heavy, like it had its own inertia."
+    "I smashed it against the Janus statue, and the choking claustrophobic feeling, that staleness in the air that had creeped up on me slowly, instantly disappated."
+    "The merry little dances of the airborne grasses became manic spins, and gusts like huge fists shoved cultists down or sent them up."
+    "Kuroneko ducked into the lodge. The dagger was still squirming against my hand."
+    kuroneko "Sacrifice! Now!"
+    ai "Wait, I didn't plan that far a--"
+    kuroneko "I thought we'd have more time, but something's angry out there."
+    "A large piece of roofing tore off the building and whipped around back through the far window, landing neatly beside me. The dagger seemed attracted to it."
+    if debt_erased:
+        "Through the now-empty windowframe, I saw flames flickering in a nearby building"
+    kuroneko "SACRIFICE. NOW."
+    menu:
+        "Aoi" if aoi_unstuck_in_time:
+            jump aoi_bad_end
+        "Kuroneko" if kuroneko_unstuck_in_time:
+            jump sacrifice_kuroneko
+        "Koneko" if koneko_unstuck_in_time:
+            jump sacrifice_koneko
+        "Wait":
+            ai "Wait, hold on a se--"
+            kuroneko "WE. DON'T. HAVE. TIME."
+            jump sacrifice_now
+label sacrifice_now:
+    menu:
+        "Sacrifice Aoi" if aoi_unstuck_in_time:
+            jump aoi_bad_end
+        "Sacrifice Kuroneko" if kuroneko_unstuck_in_time:
+            jump sacrifice_kuroneko
+        "Sacrifice Koneko" if koneko_unstuck_in_time:
+            jump sacrifice_koneko
+        "Hold on, let me thi--":
+            kuroneko "NO TIME. SACRIFICE NOW."
+            jump sacrifice_now_2
+label sacrifice_now_2:
+    menu:
+        "Aoi":
+            jump aoi_bad_end
+        "Kuroneko":
+            jump sacrifice_kuroneko
+        "Koneko":
+            jump sacrifice_koneko
+        "there must be another way":
+            jump another_way
+label another_way:
+    menu:
+        "Oh fuck oh fuck oh fuck":
+            jump sacrifice_now
+        "Think, damnit":
+            jump think_damnit
+label think_damnit:
+    n "OK, three things, three random-ass things"
+    n "Things I know about in this fucking town and if they can hurt us maybe they can save us too"
+    menu:
+        "magic":
+            n "Maybe we can use magic to... Fuck..."
+            n "Whatever is out there has us way out-gunned in terms of magic."
+            jump sacrifice_now
+        "clones":
+            jump endgame_clones
+        "aliens":
+            n "Maybe if Koneko-chan can call the aliens we can sacrific---"
+            n "No way. I saw those things take out an entire heavily-armed military base. I can't stab it with a knife."
+            jump sacrifice_now
+        "ohfuckohfuckohfuck":
+            jump sacrifice_now
 
-# Notes on endgame:
-# ritual takes place near midnight walpurgisnacht, not may day proper
-# kuroneko gets ai & the others robes so they can sneak in unnoticed
-# shortly before the ritual begins, gunfire is heard. some cultists panic. cult leader tells them to continue, but there's tension whether or not it'll start
-# ai & the others sneak into the altar room while kuroneko plays in a magic circle just outside the lodge proper
-# she plays over loud gunshots and nearly hits the wrong note a couple times, but finally the first bar is finished and ai smashes the altar
-# a sudden wind sweeps through, and parts of the lodge actually are blown off. the yakuza house next door catches fire but it's unclear if that's related.
-# kuroneko runs in and says "we need to have a sacrifice, now!"
-# options are (all of the unstuck) + "wait"
-# all of the options other than aoi & wait end with ai being killed + general bad end
-# picking aoi leads to an end where the world is saved but ai "killed aoi twice"/ wracked with guilt
-# "wait" leads to kuroneko saying "we don't have any time, we need a sacrifice now"
-# followed by a menu that's the same options but "wait" is replaced with "wait let me think"
-# "wait let me think" gets a similar response, same menu but "wait" is now "there has to be another way"
-# that leads to menu with "magic", "clones", "aliens"
-# correct answer is clones; all others lead to killed by ritual blowback + bad end
-# clones -> 
-# ai "we need to get one of those clones!"
-# aoi "you knew?"
-# n "but how..."
-# same menu again but now the right answer is aliens
-# ai "koneko, can you contact the others?"
-# koneko "yes, but..."
-# ai "tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
-# aoi "you knew."
-# portal opens
-# ai hugs aoi as she goes to the portal
-# ai "yes, i knew"
-# ai goes into the portal and comes out carrying her clone
-# koneko "okay tell them the rest of the deal quick because they're getting impatient"
-# ai "tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
-# ai "their hippocampuses"
-# kuroneko "hippocami"
-# ai "fuck you, hippocampuses. their hippocampuses ae fine but their cerebellums"
-# kuroneko "cerebella"
-# ai "are underclocked. their memory banks are functional but empty. they're already being used for organ storage so just use their brains too"
-# kuroneko "they say okay"
-# ai "alright i'm doing this"
-# ai "i guess this is the end of my dream of a life full of junk food and heavy drinking with impunity"
-# ai stabs her clone
-# wind stops, sky clears, jump festival
-# note: if halloween yakuza debt arc isn't cleared then gunshots & building on fire don't happen, rather than jump to festival we jump to another bad end where after defeating the ritual everyone goes to the fujinomia house to find their parents dead and more armed yakuza waiting for them
+label endgame_clones:
+    ai "I know what we need to do! We need to get one of those clones."
+    aoi "Ai-chan, you knew?"
+    n "but how..."
+    menu:
+        "magic":
+            n "Maybe we can use magic to... Fuck..."
+            n "Whatever is out there has us way out-gunned in terms of magic."
+            jump sacrifice_now
+        "clones":
+            n "We can't use clones if we don't have them. Shit."
+            jump sacrifice_now
+        "aliens":
+            n "Maybe if Koneko-chan can call the aliens we can sacrific---"
+            n "No way. I saw those things take out an entire heavily-armed military base. I can't stab it with a knife."
+            n "Wait, I've got it!"
+            jump endgame_aliens
+        "ohfuckohfuckohfuck":
+            jump sacrifice_now
+label endgame_aliens:
+    ai "koneko, can you contact the others?"
+    koneko "yes, but..."
+    ai "tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
+    aoi "you knew."
+    portal opens
+    ai hugs aoi as she goes to the portal
+    ai "yes, i knew"
+    ai goes into the portal and comes out carrying her clone
+    koneko "okay tell them the rest of the deal quick because they're getting impatient"
+    ai "tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
+    ai "their hippocampuses"
+    kuroneko "hippocami"
+    ai "fuck you, hippocampuses. their hippocampuses ae fine but their cerebellums"
+    kuroneko "cerebella"
+    ai "are underclocked. their memory banks are functional but empty. they're already being used for organ storage so just use their brains too"
+    kuroneko "they say okay"
+    ai "alright i'm doing this"
+    ai "i guess this is the end of my dream of a life full of junk food and heavy drinking with impunity"
+    "I steady the knife and try not to look at the uncomprehending eyes of my doppelganger as I sink the blade into her neck."
+    "The wind clears and the cloud cover disappates."
+    ai "I guess that's that, then."
+    ai "I need to wash my hands."
+    if debt_erased:
+        jump festival
+    jump fujinomiya_bad_end
 
 label aoi_bad_end:
     ai "Aoi-chan, could y--"

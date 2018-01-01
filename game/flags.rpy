@@ -19,6 +19,8 @@ define halloween_janus_head_inverted = False
 # Good end is a scene at the town's May Day festival. May day festivals would have been considered politically dangerous
 # in Japan for a while, so maybe we can fill in why this one was allowed to exist in backstory.
 define altar_destroyed = False
+define debt_erased = False
+$ achievement.register("Jubilee")
 $ achievement.register("Bad end")
 $ achievement.register("Tama-ya!")
 $ achievement.register("Complete")
