@@ -328,7 +328,7 @@ label snoop_library_checkout_desk:
             "Rituals and Practices of Speculative Masonry by Sir Theonius Tunt"
             "Aleksandr Scriabin: The Secret Histories by Pyotr Fyodorov"
             "The Hellenic Revival: Rites and Practices for the Olympian Pantheon in the Modern Day by Ravyn Rowanwulf"
-             $ knows_kuroneko_book_list = True
+            $ knows_kuroneko_book_list = True
             jump snoop_library_checkout_desk
         "Let's see what Aoi's been checking out":
             "Aoi has only ever checked a book out from this library once. In freshman year, she checked out Microwave Cooking for Two and returned it the following day."
