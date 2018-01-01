@@ -100,6 +100,7 @@ label fujinomiya_bad_end:
     kuroneko "Wait a second."
     "Everyone slows down, but we're still too giddy to stop."
     "Koneko goes stiff and I remove my arm from her shoulder."
+    scene bg fujinomiya household dark
     koneko "The lights are on"
     kuroneko "My parents are never up after midnight. They must have heard us sneak out."
     "Koneko nodded"
