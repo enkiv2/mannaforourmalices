@@ -91,7 +91,7 @@ label sacrifice_kuroneko:
     "I reach back and prepare to stab, but Kuroneko has already disappeared. My knees buckle under me and my head hits a flagstone as I fall."
     jump death
 
-label sacrifice koneko:
+label sacrifice_koneko:
     "I eye Koneko and ready my blade." 
     "My prey has noticed me. She creeps back slowly, but I am quick."
     "I prepare to stab but she screams and crouches."
