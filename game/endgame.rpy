@@ -21,6 +21,7 @@ label ritual:
     ai "That's the cue -- the end of the first stanza."
     "I ducked into the lodge and grabbed the knife from the altar. It felt heavy, like it had its own inertia."
     "I smashed it against the Janus statue, and the choking claustrophobic feeling, that staleness in the air that had creeped up on me slowly, instantly disappated."
+    $ altar_destroyed = True
     "The merry little dances of the airborne grasses became manic spins, and gusts like huge fists shoved cultists down or sent them up."
     "Kuroneko ducked into the lodge. The dagger was still squirming against my hand."
     kuroneko "Sacrifice! Now!"
@@ -84,6 +85,18 @@ label think_damnit:
             jump sacrifice_now
         "ohfuckohfuckohfuck":
             jump sacrifice_now
+
+label sacrifice_kuroneko:
+    ai "If you're so insistent then..."
+    "I reach back and prepare to stab, but Kuroneko has already disappeared. My knees buckle under me and my head hits a flagstone as I fall."
+    jump death
+
+label sacrifice koneko:
+    "I eye Koneko and ready my blade." 
+    "My prey has noticed me. She creeps back slowly, but I am quick."
+    "I prepare to stab but she screams and crouches."
+    "Is it a distraction? A bluff? Something little bunnies do to confuse the wolf? But I feel something slimy around my ankle and I'm upside down and my head is wet and warm"
+    jump death
 
 label endgame_clones:
     ai "I know what we need to do! We need to get one of those clones."
