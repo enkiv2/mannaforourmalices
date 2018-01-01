@@ -13,6 +13,7 @@ image bg library = "library.png"
 image bg roof = "roof.png"
 image bg cafeteria = "cafeteria.png"
 image bg fujinomiya household dark = "fujinomiya residence night.png"
+image bg festival = "festival.png"
 # Ai route
 image bg morning = "morning.png"
 image bg downstairs = "downstairs.png"
