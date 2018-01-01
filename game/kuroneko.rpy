@@ -115,4 +115,34 @@ label kuroneko_book_content:
             jump afternoon_classes
         "Nevermind":
             jump lunch_library
+label kuroneko_masonry_roof:
+    "Kuroneko's expression suddenly changed, becoming serious and almost even respectful."
+    "She offered me her hand and we performed a strange handshake."
+    n "Jesus, I guess I have to pretend to be her superior now?"
+    ai "I have... graduated you to the status of... um... fellow craft... for a reason!"
+    n "Um, come on, think of a reason..."
+    ai "I have... an important task for you!"
+    ai "But... first... um..."
+    ai "I need to test you!"
+    menu:
+        "Who is your usual Worshipful Master at the O:.S:.S Lodge?" if knows_about_oss:
+            jump kuroneko_lodge_info
+        "What is the role of Janus in or practices?" if knows_about_janus:
+            jump kuroneko_janus_info
+        "What is the role of Scriabin in our practices?" if knows_about_scriabin:
+            jump kuroneko_scriabin_info
+        "Who is the master who makes the grass green?":
+            kuroneko "I... Uh..."
+            ai "Test failed! I hereby revoke your fellow craft status!"
+            "I hurry away before Kuroneko can ask me any questions."
+            jump afternoon_classes
 
+label kuroneko_lodge_info:
+    comment "XXX fill in lodge info"
+    jump afternoon_classes
+label kuroneko_janus_info:
+    comment "XXX fill in janus info"
+    jump afternoon_classes
+label kuroneko_scriabin_info:
+    comment "XXX fill in scriabin info"
+    jump afternoon_classes
