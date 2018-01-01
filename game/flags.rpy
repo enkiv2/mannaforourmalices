@@ -59,6 +59,10 @@ define knows_about_kuroneko_concert = False
 $ achievement.register("Some Eyes-Wide-Shut MFers")
 define knows_about_kuroneko_books = False
 define knows_about_oss = False
+define knows_kuroneko_book_list = False
+define knows_masonic_initiation_phrase = False
+define knows_about_scriabin = False
+define knows_about_janus = False
 define kuroneko_unstuck_in_time = False
 
 # Koneko route

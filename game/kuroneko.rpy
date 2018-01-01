@@ -94,3 +94,25 @@ label music_room:
     scene bg hallway dark
     with dissolve
     jump walk_home
+
+label kuroneko_book_content:
+    "All the books she checked out are currently on the shelves."
+    menu:
+        "Check out the Speculative Masonry thing":
+            "\"The worshipful master says 'I now present my right hand in token of the continuance of friendship and brotherly love, and will invest you with the pass-grip, pass-word, real grip and word of a Fellow Craft'\""
+            n "Weird..."
+            $ knows_masonic_initiation_phrase = True
+            jump afternoon_classes
+        "Check out the Scriabin book":
+            "\"Scriabin's obsession with the occult is most famously associated with his final piece, which he intended to be played during the apocalypse, but the Prometheus Chord has its own numerological significance.\""
+            n "I don't know anything about music OR the occult, so this is fucking jibberish to me."
+            $ knows_about_scriabin = True
+            jump afternoon_classes
+        "Check out the Hellenistic magic book":
+            "\"Because Janus is associated with the transition into the new year, he can, with the help of Hecate, be called upon for the same kind of time-related workings as Chronos.\""
+            "\"A sacrifice is necessary for such a working. A bull is customary, but for extremely difficult tasks, the priest is said to have sometimes sacrificed himself or a virgin girl with the ritual knife.\""
+            $ knows_about_janus = True
+            jump afternoon_classes
+        "Nevermind":
+            jump lunch_library
+

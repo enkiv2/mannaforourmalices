@@ -306,8 +306,53 @@ label dont_follow_mimi:
             jump lunch_library
 label lunch_library:
     scene bg library
-    comment "XXX fill in lunch_library"
+    "There are a few students milling around in the stacks, but the library is otherwise deserted."
+    "Even the student who's supposed to be on checkout duty has skipped out."
+    "The library isn't a popular place to have lunch -- probably because of the signs that say eating and drinking is prohibited here."
+    menu:
+        "Snoop around in the checkout desk":
+            jump snoop_library_checkout_desk
+        "Find some books":
+            jump find_books
+        "Look around":
+            jump look_around_library
+        "Just eat lunch":
+            "The library is quiet, and the lunch I packed is a goddamned masterpiece."
     jump afternoon_classes
+label snoop_library_checkout_desk:
+    "The checkout desk is messy. The computer was left unlocked."
+    menu:
+        "Let's see what kind of weird books Kuroneko has been checking out":
+            "According to the computer, she has several books currently checked out. The titles seem to be in Latin."
+            "There are a couple titles she's renewed several times in the past six months:"
+            "Rituals and Practices of Speculative Masonry by Sir Theonius Tunt"
+            "Aleksandr Scriabin: The Secret Histories by Pyotr Fyodorov"
+            "The Hellenic Revival: Rites and Practices for the Olympian Pantheon in the Modern Day by Ravyn Rowanwulf"
+             $ knows_kuroneko_book_list = True
+            jump snoop_library_checkout_desk
+        "Let's see what Aoi's been checking out":
+            "Aoi has only ever checked a book out from this library once. In freshman year, she checked out Microwave Cooking for Two and returned it the following day."
+            jump snoop_library_checkout_desk
+        "Let's see what Shironeko's been checking out":
+            "Shironeko checked out a copy of Understanding Your 6502: Assembly, Microcode, and Internals four years ago and hasn't returned it yet."
+            jump snoop_library_checkout_desk
+        "Let's see what Koneko-chan's been checking out":
+            "Koneko-chan currently has a copy of The Four Hour Body checked out. She recently returned a copy of The Phillip Experiment."
+            jump snoop_library_checkout_desk
+        "Why the fuck am I looking at library records?":
+            "That's really fucking rude of me. I should do something else."
+            jump lunch_library
+label look_around_library:
+    "Umeji-san is in the stacks, but nobody else familiar is around."
+    "She looks upset. It would be rude to greet her, since she isn't very close."
+    jump lunch_library
+label find_books:
+    menu:
+        "Find the books Kuroneko was into" if knows_kuroneko_book_list:
+            jump kuroneko_book_content
+        "Find a manga or something":
+            "The manga section hasn't been updated since last year. But, GYO is always worth a re-read."
+            jump lunch_library
 label lunch_roof:
     scene bg roof
     comment "XXX fill in lunch_roof"
