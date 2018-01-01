@@ -146,3 +146,59 @@ label kuroneko_janus_info:
 label kuroneko_scriabin_info:
     comment "XXX fill in scriabin info"
     jump afternoon_classes
+
+# Notes on dagger mechanic:
+# Stabbing someone with the ritual dagger forces their soul from their body but also kills anyone else who is unstuck
+# So, unsticking someone else is fatal. This is the dagger's "kick"
+# kick manifests as waves of nausea, dizziness, and then bleeding from the eyes
+
+# Notes on kuroneko route in 2011:
+# dying in 2011 will send you back to 2012 unless you also reverse the janus head there.
+# kuroneko and ai sneak into the lodge in 2012 in order to find the book of shadows containing details about the ritual
+# the section about how to abort the ritual safely has been torn out
+# they go back to 2011 to fetch an earlier version & find it, using dagger & kick to jump to the beginning of halloween day. "sure is convenient, but it fuckin hurts don't it?"
+# that version says that the altar must be destroyed during the ritual, after the first bar of music but before the third, and must be followed by a human sacrifice with the ritual dagger.
+# this is endgame.
+
+# Notes on endgame:
+# ritual takes place near midnight walpurgisnacht, not may day proper
+# kuroneko gets ai & the others robes so they can sneak in unnoticed
+# shortly before the ritual begins, gunfire is heard. some cultists panic. cult leader tells them to continue, but there's tension whether or not it'll start
+# ai & the others sneak into the altar room while kuroneko plays in a magic circle just outside the lodge proper
+# she plays over loud gunshots and nearly hits the wrong note a couple times, but finally the first bar is finished and ai smashes the altar
+# a sudden wind sweeps through, and parts of the lodge actually are blown off. the yakuza house next door catches fire but it's unclear if that's related.
+# kuroneko runs in and says "we need to have a sacrifice, now!"
+# options are (all of the unstuck) + "wait"
+# all of the options other than aoi & wait end with ai being killed + general bad end
+# picking aoi leads to an end where the world is saved but ai "killed aoi twice"/ wracked with guilt
+# "wait" leads to kuroneko saying "we don't have any time, we need a sacrifice now"
+# followed by a menu that's the same options but "wait" is replaced with "wait let me think"
+# "wait let me think" gets a similar response, same menu but "wait" is now "there has to be another way"
+# that leads to menu with "magic", "clones", "aliens"
+# correct answer is clones; all others lead to killed by ritual blowback + bad end
+# clones -> 
+# ai "we need to get one of those clones!"
+# aoi "you knew?"
+# n "but how..."
+# same menu again but now the right answer is aliens
+# ai "koneko, can you contact the others?"
+# koneko "yes, but..."
+# ai "tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
+# aoi "you knew."
+# portal opens
+# ai hugs aoi as she goes to the portal
+# ai "yes, i knew"
+# ai goes into the portal and comes out carrying her clone
+# koneko "okay tell them the rest of the deal quick because they're getting impatient"
+# ai "tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
+# ai "their hippocampuses"
+# kuroneko "hippocami"
+# ai "fuck you, hippocampuses. their hippocampuses ae fine but their cerebellums"
+# kuroneko "cerebella"
+# ai "are underclocked. their memory banks are functional but empty. they're already being used for organ storage so just use their brains too"
+# kuroneko "they say okay"
+# ai "alright i'm doing this"
+# ai "i guess this is the end of my dream of a life full of junk food and heavy drinking with impunity"
+# ai stabs her clone
+# wind stops, sky clears, jump festival
+

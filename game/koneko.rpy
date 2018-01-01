@@ -352,3 +352,9 @@ label make_effort_to_focus:
     "A piece of something hard -- maybe rock -- was jutting out of the back of my skull..."
     $ knows_milpsi_shell_co_name = True
     jump death
+
+# Notes on aliens:
+# koneko calls them "the others" & they can reach her from a distance even though she only has touch telepathy with humans
+# they contact telepaths and cause damage because they seek to offload their memories into other beings for storage
+# the memories aren't properly formatted for humans, so humans that get full of alien memories become disoriented, lose focus
+# the aliens trashed that facility because they were frustrated by the way humans kept overwriting the implanted memories
