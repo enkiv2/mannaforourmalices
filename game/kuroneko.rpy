@@ -201,4 +201,5 @@ label kuroneko_scriabin_info:
 # ai "i guess this is the end of my dream of a life full of junk food and heavy drinking with impunity"
 # ai stabs her clone
 # wind stops, sky clears, jump festival
+# note: if halloween yakuza debt arc isn't cleared then gunshots & building on fire don't happen, rather than jump to festival we jump to another bad end where after defeating the ritual everyone goes to the fujinomia house to find their parents dead and more armed yakuza waiting for them
 
