@@ -105,28 +105,34 @@ label endgame_clones:
         "ohfuckohfuckohfuck":
             jump sacrifice_now
 label endgame_aliens:
-    ai "koneko, can you contact the others?"
-    koneko "yes, but..."
-    ai "tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
-    aoi "you knew."
-    portal opens
-    ai hugs aoi as she goes to the portal
-    ai "yes, i knew"
-    ai goes into the portal and comes out carrying her clone
-    koneko "okay tell them the rest of the deal quick because they're getting impatient"
-    ai "tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
-    ai "their hippocampuses"
+    ai "Koneko, can you contact the Others?"
+    koneko "Yes, but..."
+    ai "Tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
+    aoi "You knew."
+    "The portal opened behind Aoi"
+    "I embraced her and kissed her forehead."
+    ai "Yes, I knew"
+    "Just before me on the other side of the portal is my own clone, naked on the rack."
+    "I let Aoi go and walk to it. Her."
+    "Unhooking complicated and delicate machinery is difficult, and despite the urgency, I try to do it gently. Each snag of a long-buried tube or wire elicits a foggy look of hurt betrayal from this attractive stranger."
+    "I carry my other self back, bridal-style, and the portal closes behind me."
+    koneko "Okay tell them the rest of the deal quick because they're getting impatient"
+    ai "Tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
+    ai "Their hippocampuses"
     kuroneko "hippocami"
-    ai "fuck you, hippocampuses. their hippocampuses ae fine but their cerebellums"
+    ai "fuck you, hippocampuses. Their hippocampuses ae fine but their cerebellums"
     kuroneko "cerebella"
-    ai "are underclocked. their memory banks are functional but empty. they're already being used for organ storage so just use their brains too"
-    kuroneko "they say okay"
-    ai "alright i'm doing this"
-    ai "i guess this is the end of my dream of a life full of junk food and heavy drinking with impunity"
+    ai "are underclocked. Their memory banks are functional but empty. They're already being used for organ storage so just use their brains too"
+    kuroneko "They say okay"
+    ai "Alright i'm doing this"
+    ai "T guess this is the end of my dream of a life full of junk food and heavy drinking"
     "I steady the knife and try not to look at the uncomprehending eyes of my doppelganger as I sink the blade into her neck."
-    "The wind clears and the cloud cover disappates."
+    "The wind clears and the cloud cover disappates as fresh, warm blood runs down my hands and drips from my elbows, caking the inside of my robe."
     ai "I guess that's that, then."
+    "She has that hurt and betrayed expression again. I know that expression because it is mine."
     ai "I need to wash my hands."
+    scene bg black
+    with fade
     if debt_erased:
         jump festival
     jump fujinomiya_bad_end
