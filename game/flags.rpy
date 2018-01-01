@@ -53,6 +53,7 @@ define knows_about_clone_racks = False
 # with even yandere-mode Aoi.)
 define knows_whole_aoi_story = False
 define aoi_unstuck_in_time = False
+$ achievement.register("Aoi bad end")
 
 # Kuroneko route
 define knows_about_kuroneko_concert = False
@@ -64,6 +65,7 @@ define knows_masonic_initiation_phrase = False
 define knows_about_scriabin = False
 define knows_about_janus = False
 define kuroneko_unstuck_in_time = False
+$ achievement.register("Fujinomiya bad end")
 
 # Koneko route
 define knows_about_koneko_telepathy = False
