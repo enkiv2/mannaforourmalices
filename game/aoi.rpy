@@ -328,9 +328,12 @@ label play_hooky:
     jump arcade
 label arcade:
     scene bg arcade
+    play music "music/Spikes!.mp3"
+    scene bg black with fade 30s
     jump go_home_early
 label go_home_early:
     scene bg downstairs
+    play music "music/Infocalypse_-_scathing_frolic.mp3"
     "Mom" "Hey honey, how was school?"
     ai "Uneventful!"
     n "I made it home safely! Fucking finally!"
