@@ -65,7 +65,7 @@ label core_story:
     ai "God damn it!"
     "7 o'clock."
     n "I'm going to be late for school"
-    if read_z_prize_papers:
+    if read_z_prize_papers and not knows_whole_aoi_story:
         n "More importantly, if I want to know what's going on with Aoi, this is really my only chance."
         n "{b}With Aoi?{/b}"
         n "There's something going on with her, and with her parents."
@@ -80,7 +80,6 @@ label core_story:
             "Sneak out":
                 jump sneak_to_yomipoly
 label dont_sneak_to_yomipoly:
-    # TODO: add more variation to this section, based on flags
     "I throw my clothes on and rush downstairs."
     scene bg downstairs
     with fade
@@ -90,44 +89,69 @@ label dont_sneak_to_yomipoly:
     scene bg street
     "Mom" "By the way, Aoi's already waiting"
     show aoi happy
-    play music "music/Infocalypse_-_scathing_frolic.mp3"
-    aoi "Ai-chan~"
-    ai "I don't know how you're so fucking energetic in the morning, Aoi."
-    aoi "Why wouldn't I be?"
-    extend "\nAfter all..."
-    show aoi hearteyes
-    extend " I get to see"
-    extend " my"
-    extend " beloved"
-    extend " Ai~"
-    extend " chan~"
-    extend "~"
-    extend "~"
-    n "I don't know how to respond when she's like this."
-    show aoi happy
-    aoi "By the way, Ai-chan~~~"
-    n "Here it comes..."
-    aoi "You wouldn't maybe happen to have today's biology homework, would you?"
-    ai "Jesus, Aoi."
-    ai "Yeah, sure. You can copy it again."
-    show aoi hearteyes
-    aoi "{i}Squeee!{/i}"
-    ai "Your parents must be reconsidering their whole field. What are the odds of the child of two genius geneticists being such a ditz!"
-    show aoi pout
-    pause 1
-    aoi "Meanie~"
-    show aoi happy
-    if knows_about_aoi_parents:
-        n "I seriously do wonder what's going on with her."
-        extend "\nI knew her folks were smart, but the Z Prize is..."
-        extend "\n{b}What?{/b}"
-        extend "\nHer parents won the Z Prize back in the 90s. I found a picture of them holding it."
-        n "I wonder why she never said anything about it."
-        extend "\n{b}She gets enough flack for being dense as it is.{/b}"
-        extend "\n{b}If people knew her parents weren't just smart but winners of the closest thing synthetic biology has to a Fields Medal...{/b}"
-        n "I guess you're right."
-    "We continued to make smalltalk the rest of the way to school."
+    if knows_about_clone_racks and not knows_whole_aoi_story:
+        play music "music/Infocalypse_-_Dickless_Whore__The_Disembodied_.mp3"
+        aoi "Ai-chan~"
+        ai "Aoi..."
+        aoi "Ai-chan~~"
+        n "I don't know how to respond when she's like this."
+        ai "How's... life?"
+        aoi "Life is wonderful, now that I'm with you~!"
+        n "She doesn't remember. Act normal. She doesn't remember."
+        show aoi happy
+        aoi "By the way, Ai-chan~~~"
+        show aoi pout
+        aoi "You wouldn't maybe happen to have today's biology homework, would you?"
+        ai "Jesus, Aoi."
+        n "She really doesn't remember..."
+        ai "Yeah, sure. You can copy it again."
+        show aoi hearteyes
+        aoi "{i}Squeee!{/i}"
+        n "{b}Remember what?{/b}"
+        n "She's acting so normal right now, so it's hard to imagine she could kill me."
+        n "No, that's not it. Whatever led to her killing me is latent in this moment. Those racks exist. It's just that she doesn't know I know about them yet."
+        n "{b}She killed...{/b}"
+        n "Those racks are a secret she'd even kill me for. Or maybe she only killed me because it was me."
+    else:
+        play music "music/Infocalypse_-_scathing_frolic.mp3"
+        aoi "Ai-chan~"
+        ai "I don't know how you're so fucking energetic in the morning, Aoi."
+        aoi "Why wouldn't I be?"
+        extend "\nAfter all..."
+        show aoi hearteyes
+        extend " I get to see"
+        extend " my"
+        extend " beloved"
+        extend " Ai~"
+        extend " chan~"
+        extend "~"
+        extend "~"
+        n "I don't know how to respond when she's like this."
+        show aoi happy
+        aoi "By the way, Ai-chan~~~"
+        n "Here it comes..."
+        aoi "You wouldn't maybe happen to have today's biology homework, would you?"
+        ai "Jesus, Aoi."
+        ai "Yeah, sure. You can copy it again."
+        show aoi hearteyes
+        aoi "{i}Squeee!{/i}"
+        ai "Your parents must be reconsidering their whole field. What are the odds of the child of two genius geneticists being such a ditz!"
+        show aoi pout
+        pause 1
+        aoi "Meanie~"
+        show aoi happy
+        if knows_about_aoi_parents and not knows_whole_aoi_story:
+            n "I seriously do wonder what's going on with her."
+            extend "\nI knew her folks were smart, but the Z Prize is..."
+            extend "\n{b}What?{/b}"
+            extend "\nHer parents won the Z Prize back in the 90s. I found a picture of them holding it."
+            n "I wonder why she never said anything about it."
+            extend "\n{b}She gets enough flack for being dense as it is.{/b}"
+            extend "\n{b}If people knew her parents weren't just smart but winners of the closest thing synthetic biology has to a Fields Medal...{/b}"
+            n "I guess you're right."
+        "We continued to make smalltalk the rest of the way to school."
     hide aoi
+    # TODO: add more variation to this section, based on flags
     scene bg classroom
     show kuroneko pout at left
     "As we entered the classroom, we saw Fujinomiya Kuroneko muttering angrily to herself, stewing over some private betrayal."
@@ -146,7 +170,7 @@ label dont_sneak_to_yomipoly:
     show aoi happy at right
     aoi "Koneko-chan?"
     kuroneko "Are you an idiot? Koneko hasn't so much as been tardy once since preschool!"
-    if knows_about_koneko_telepathy:
+    if knows_about_koneko_telepathy and not knows_milpsi_shell_co_name:
         n "Something very weird is going on with Koneko-chan."
         extend "\n{b}Weirder than a ghost in her head?{/b}"
         extend "\nMaybe."
@@ -384,6 +408,7 @@ label lunch_cafeteria:
     comment "XXX fill in lunch_cafeteria"
     jump afternoon_classes
 label lunch_classroom:
+    # TODO: add more variation to this section, based on flags
     "I had lunch in the classroom with Aoi."
     aoi "Say aaah~"
     ai "I can feed myself, you know."
@@ -402,6 +427,7 @@ label lunch_classroom:
     hide aoi
     jump afternoon_classes
 label afternoon_classes:
+    # TODO: add more variation to this section, based on flags, & beef it up / add more content
     scene bg classroom
     "The first period after lunch was English."
     "The bell rang and the teacher came in."
