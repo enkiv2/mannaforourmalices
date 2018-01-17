@@ -1,3 +1,4 @@
+# The climax & endings
 label ritual:
     "As planned, Kuroneko met us in the convenience store bathroom with dark woolen robes. We put them on and then waited until a crowd of similarly-robed cultists walked past."
     "We hovered in the back, near the lodge's service door, as the cultists formed a rough ring around the magic circle and Kuroneko took her place in the center."

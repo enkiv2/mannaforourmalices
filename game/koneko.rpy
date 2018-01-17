@@ -1,3 +1,4 @@
+# Koneko's route
 label visit_track:
     scene bg track
     with dissolve

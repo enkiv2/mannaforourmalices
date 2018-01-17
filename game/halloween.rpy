@@ -1,3 +1,4 @@
+# This is the primary file for the section of the game that occurs on Halloween of 2011
 label halloween:
     $ achievement.grant("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
 label yakuza_party:

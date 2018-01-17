@@ -1,3 +1,4 @@
+# Ending credits
 define credit = Character(None, kind=nvl_narrator, what_prefix="{center}{cps=2}{b}{size=72}", what_suffix="{/size}{/b}{/cps}<vspace=160}{/center}")
 label credits:
     scene bg black

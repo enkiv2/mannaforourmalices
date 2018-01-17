@@ -1,3 +1,4 @@
+# Shironeko mostly functions as a helper / information repository
 label deliver_printouts:
     # We go to the Fujinomiya household, in the opposite direction from school
     scene bg street

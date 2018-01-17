@@ -1,3 +1,4 @@
+# Kuroneko's route is the main one
 label music_room:
     "I placed the box by the door to the science club's room, and went across the hall."
     scene bg music room

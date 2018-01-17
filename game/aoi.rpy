@@ -1,3 +1,4 @@
+# Aoi's route
 label return_box:
     "The box of glassware is heavier than it looks."
     n "No wonder nobody moved it before."

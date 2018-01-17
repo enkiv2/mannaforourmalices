@@ -1,3 +1,4 @@
+# Festival (good end)
 label festival:
     scene bg downstairs
     "Mom" "Ai-chan, are you ready? Aoi-chan's already waiting!"

@@ -1,3 +1,4 @@
+# Mimi mostly functions as a helper / information repository
 label follow_mimi:
     play music "music/Infocalypse_-_vapor_intrusion.mp3" fadeout 5 fadein 5
     ai "I need to use the john. I'll be right back."
