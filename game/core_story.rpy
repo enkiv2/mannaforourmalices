@@ -17,6 +17,7 @@ label core_story:
         extend "Wow, I must still be dr--"
         extend "{b}Why is there a voice in my hea--{/b}"
         if num_deaths > 1:
+            # TODO: add more variation to this section, based on flags
             extend "This is going to be hard to ex--"
             extend "{b}I'm going crazy, aren't I?{/b}"
             extend " Look, shut the fuck up a minute. "
@@ -79,6 +80,7 @@ label core_story:
             "Sneak out":
                 jump sneak_to_yomipoly
 label dont_sneak_to_yomipoly:
+    # TODO: add more variation to this section, based on flags
     "I throw my clothes on and rush downstairs."
     scene bg downstairs
     with fade
@@ -163,6 +165,7 @@ label dont_sneak_to_yomipoly:
             "Look for her":
                 jump look_for_koneko_before_school
 label dont_look_for_koneko_before_school:
+    # TODO: add more variation to this section, based on flags
     aoi "Then... Shironeko-senpai?"
     n "Why is that a question?!"
     kuroneko "It seems even Tomoe-san is capable of using the process of elimination."
