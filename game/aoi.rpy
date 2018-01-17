@@ -330,7 +330,7 @@ label play_hooky:
 label arcade:
     scene bg arcade
     play music "music/Spikes!.mp3"
-    scene bg black with fade 30s
+    scene bg black with fade
     jump go_home_early
 label go_home_early:
     scene bg downstairs
