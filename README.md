@@ -6,3 +6,5 @@ You will need [ren'py](http://www.renpy.org) to play it based on a source checko
 
 Periodic builds are available from [the itch.io page](https://enkiv2.itch.io/manna-for-our-malices).
 
+There is a [thread for this game on the lemmasoft forums](https://lemmasoft.renai.us/forums/viewtopic.php?f=43&t=45422&p=463206#p463206)
+
