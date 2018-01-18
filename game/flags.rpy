@@ -42,6 +42,7 @@ $ achievement.register("Peer review")
 define knows_poly_guard_position = False
 # We then go up against a keypad lock.
 define knows_about_keypad = False
+define knows_keycode = False
 # We inevitably get killed here but now that we know there's a keypad lock we can dare shironeko to get the combination (which will be randomly 
 # generated and then stored in persistent storage, so that it's unique to the game copy but the same each time we ask her)
 define keycode_try = "0000" # this is input
@@ -75,6 +76,8 @@ $ achievement.register("Touch telepathy")
 define saw_milpsi_symbol = False
 define knows_about_stargate = False
 define knows_milpsi_shell_co_name = False
+define knows_about_stargate = False
+define knows_about_yipi = False
 define koneko_unstuck_in_time = False
 
 # Shironeko route

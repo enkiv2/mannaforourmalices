@@ -132,6 +132,7 @@ label ask_shironeko_about_yipi:
     shironeko "They start having chronic migraines, and then eventually graduate to strokes. Sometimes, they also develop intractible epilepsy."
     shironeko "This is... weird stuff."
     shironeko "It doesn't sit well with me, in light of something else I recently uncovered."
+    $ knows_about_yipi = True
     jump alien_tech
 label ask_shironeko_about_stargate:
     ai "What do you know about Project Stargate?"
@@ -163,6 +164,7 @@ label ask_shironeko_about_stargate:
     shironeko "Some people needed to be dropped from the project because contact with these alien intelligences was causing too much strain. Like, being subjected to such an alien thought process was causing memory loss and confusion."
     shironeko "I dismissed it because the way they described the aliens was so different, but I guess there could be two kinds..."
     ai "So different from what?"
+    $ knows_about_stargate = True
     jump alien_tech
 label ask_shironeko_about_milpsi_symbol:
     ai "Do you know what this symbol means?"
@@ -252,4 +254,5 @@ label ask_shironeko_for_keypad_code:
     "After less than a minute, she looked up."
     shironeko "Their security is a little disappointing."
     shironeko "The code is [keycode]. Don't forget it."
+    $ knows_keycode = True
     jump alien_tech
