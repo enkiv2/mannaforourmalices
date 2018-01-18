@@ -2,7 +2,7 @@
 
 init -2 python:
     class generateJournalContent:
-        def __call__():
+        def __call__(self):
             ret=[]
             if(in_2011):
                 ret.append("The date is October 31st, 2011.")
@@ -52,6 +52,8 @@ init -2 python:
             ret.append("Shironeko is Kuroneko's older sister. She's lazy and hardly ever comes into school, but she's super competitive and very good with computers.")
             if(knows_about_alien_tech): ret.append("She told me about some documents she found, involving space ships made of genetically engineered alien plant life.")
             return " ".join(ret)
+    def __str__(self):
+        self.call()
 
 screen notes:
     tag menu
