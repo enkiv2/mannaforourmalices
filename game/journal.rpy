@@ -52,3 +52,16 @@ init -2 python:
             ret.append("Shironeko is Kuroneko's older sister. She's lazy and hardly ever comes into school, but she's super competitive and very good with computers.")
             if(knows_about_alien_tech): ret.append("She told me about some documents she found, involving space ships made of genetically engineered alien plant life.")
             return " ".join(ret)
+
+screen notes:
+    tag menu
+    use navigation
+    hbox:
+        xmaximum 250
+        vbox:
+            frame:
+                style_group "pref"
+                has vbox
+                label _("Notes:")
+                label (GenerateJournalContent())
+
