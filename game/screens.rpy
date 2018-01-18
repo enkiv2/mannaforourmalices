@@ -256,6 +256,7 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Notes") action ShowMenu('notes')
             #textbutton _("Tips") action ShowTips()
 
 
@@ -308,6 +309,8 @@ screen navigation():
         textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
+
+        textbutton _("Notes") action ShowMenu('notes')
 
         if _in_replay:
 
