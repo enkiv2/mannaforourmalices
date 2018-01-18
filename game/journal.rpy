@@ -63,5 +63,5 @@ screen notes:
                 style_group "pref"
                 has vbox
                 label _("Notes:")
-                label (GenerateJournalContent())
+                label (generateJournalContent())
 
