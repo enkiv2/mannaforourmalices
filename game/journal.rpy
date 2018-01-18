@@ -57,12 +57,9 @@ init -2 python:
 
 screen notes:
     tag menu
-    use navigation
-    hbox:
-        vbox:
-            frame:
-                style_group "pref"
-                has vbox
+    use game_menu(_("Notes"), scroll="viewport"):
+            style_prefix "about"
+            vbox:
                 label _("Notes:")
                 label (generateJournalContent()())
 
