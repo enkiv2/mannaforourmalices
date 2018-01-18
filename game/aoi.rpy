@@ -31,7 +31,7 @@ label ignore_music:
     scene splash science room book
     "A folded piece of paper is sticking out, as well a photograph."
     "The paper is yellowed and the photograph is on real photo stock, so it must have been taken before digital cameras."
-    if knows_about_missing_lab_notebook:
+    if knows_about_missing_lab_notebook and not knows_aoi_took_lab_notebook:
         n "I should make sure Aoi isn't the one who took this."
         n "I mean, she had a weak excuse for showing up, and the notebook does have a connection to her family."
         scene bg science room
@@ -45,6 +45,11 @@ label ignore_music:
         $ knows_aoi_took_lab_notebook = True
         $ achievement.grant("In the closet")
         n "Anyhow, if the timeline's lining up then it's getting late and I should get home."
+        scene bg hallway dark
+        pause 1
+        jump walk_home
+    if knows_aoi_took_lab_notebook:
+        "I return the paper to the stack for Aoi and return home."
         scene bg hallway dark
         pause 1
         jump walk_home
