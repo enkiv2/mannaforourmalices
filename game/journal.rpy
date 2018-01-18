@@ -59,7 +59,6 @@ screen notes:
     tag menu
     use navigation
     hbox:
-        xmaximum 250
         vbox:
             frame:
                 style_group "pref"
