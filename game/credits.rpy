@@ -3,11 +3,11 @@ define credit = Character(None, kind=nvl_narrator, what_prefix="{center}{cps=2}{
 label credits:
     scene bg black
     play music "music/Infocalypse_-_Hawkhead_Falconer.mp3"
-    credit "Story: John Ohno (http://www.lord-enki.net)"
-    extend "Music: John Ohno / Infocalypse (http://infocalypse.ignorelist.com)"
+    credit "Story: {a=http://www.lord-enki.net}John Ohno{/a}"
+    extend "Music: {a=http://infocalypse.ignorelist.com}John Ohno / Infocalypse{/a}"
     extend "Placeholder art assets: John Ohno"
-    extend "Character art: Ryusei (http://glitch.social/@ryusei)"
-    extend "Background art: Cryptovexillologist (http://mastodon.social/@cryptovexillologist)"
+    extend "Character art: {a=http://glitch.social/@ryusei}Ryusei{/a}"
+    extend "Background art: {a=http://mastodon.social/@cryptovexillologist}Cryptovexillologist{/a}"
     credit "A Double Mojo Production"
     $ achievement.grant("Complete")
     return
