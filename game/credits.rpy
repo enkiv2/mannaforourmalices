@@ -5,9 +5,9 @@ label credits:
     play music "music/Infocalypse_-_Hawkhead_Falconer.mp3"
     credit "Story: John Ohno (http://www.lord-enki.net)"
     extend "Music: John Ohno / Infocalypse (http://infocalypse.ignorelist.com)"
-    extend "Background images: John Ohno"
-    extend "Original character art: John Ohno"
-    extend "New character art: Ryusei (http://glitch.social/@ryusei)"
+    extend "Placeholder art assets: John Ohno"
+    extend "Character art: Ryusei (http://glitch.social/@ryusei)"
+    extend "Background art: Cryptovexillologist (http://mastodon.social/@cryptovexillologist)"
     credit "A Double Mojo Production"
     $ achievement.grant("Complete")
     return
