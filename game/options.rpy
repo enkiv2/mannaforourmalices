@@ -50,7 +50,7 @@ Yamada Mimi - Another classmate of Ai's, she handles the school newspaper
 
 {b}Credits{/b}{i}
 
-Concept, script, and programming by John Ohno
+Concept, script, and programming by {a=http://www.lord-enki.net/}John Ohno{/a}
 
 
 {b}Art{/b}
@@ -59,7 +59,7 @@ Character art: {a=http://glitch.social/@ryusei}Ryusei{/a}
 Background art: {a=http://mastodon.social/@cryptovexillologist}Cryptovexillologist{/a}
 
 {b}Music{/b}
-Infocalypse
+{a=http://infocalypse.nfshost.com}Infocalypse{/a}
 {/i}""")
 
 
