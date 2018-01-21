@@ -54,7 +54,9 @@ Concept, script, and programming by John Ohno
 
 
 {b}Art{/b}
-Original art: John Ohno
+Placeholder art assets: John Ohno
+Character art: {a=http://glitch.social/@ryusei}Ryusei{/a}
+Background art: {a=http://mastodon.social/@cryptovexillologist}Cryptovexillologist{/a}
 
 {b}Music{/b}
 Infocalypse
