@@ -8,11 +8,11 @@ init -2 python:
                 ret.append("The date is October 31st, 2011.")
             else:
                 ret.append("The date is April 31st, 2012.")
-            ret.append("\n")
+            ret.append("\n\n   ")
             if(died): ret.append("Every time I die, I go back in time.")
             if(died): ret.append("I have died "+str(num_deaths)+" times.")
             if(midnight_loop): ret.append("I also loop in time when I go to sleep for the night -- presumably, at midnight. I don't need to be killed for this to happen.")
-            ret.append("\n")
+            ret.append("\n\n   ")
             ret.append("Tomoe Aoi is my best friend. We've known each other since we were little kids.")
             if(knows_about_aoi_parents): ret.append("In the science clubroom after school, I found a notebook with a weird scientific paper and a picture of Aoi's parents winning the Z-Prize in 1993.")
             if(knows_about_missing_lab_notebook): 
@@ -28,7 +28,7 @@ init -2 python:
             if(knows_about_clone_racks): ret.append("Behind that door, there are racks upon racks of human clones hooked up to tubes and monitors.")
             if(knows_whole_aoi_story): ret.append("It turns out that when Aoi hit her head playing with me when we were kids, she actually died. Because her parents had clones of all the kids born around that time, they replaced her with her clone. They ended up needing to make the neocortext hypoxic instead of totally disconnected in order to prevent developmental problems, so Aoi could be brought up to a normal intelligence range using nootropic drugs and a special diet.")
             if(aoi_unstuck_in_time): ret.append("I stabbed Aoi with a ritual knife and now she is unstuck in time with me.")
-            ret.append("\n")
+            ret.append("\n\n   ")
             ret.append("Kuroneko is a friend and classmate. She's a very good student, and even though she's pretty harsh, she's not a bad person.")
             if(knows_about_kuroneko_concert): ret.append("The masonic lodge behind the 7/11 is paying her to play a complicated violin piece on May 1st.")
             if(knows_about_kuroneko_books): ret.append("She was practicing that piece in the music room after school, with some thick books written in a european language. She had a lot of notes, and some strange symbols drawn.")
@@ -40,7 +40,7 @@ init -2 python:
             if(halloween_janus_head_inverted): ret.append("The Janus bust on the altar in the O:.S:.S lodge on October 31st of 2011 is inverted.")
             if(altar_destroyed): ret.append("The altar in the O:.S:.S lodge has been destroyed.")
             if(kuroneko_unstuck_in_time): ret.append("I stabbed Kuroneko with a ritual knife and she is now unstuck in time.")
-            ret.append("\n")
+            ret.append("\n\n   ")
             ret.append("Koneko is Kuroneko's little sister. She's a track star, and very serious, and ADORABLE! I just want to hug her and squeeze her and take her home!!")
             if(knows_about_koneko_telepathy): ret.append("Apparently she has touch telepathy. She's also been meeting someone before and after school.")
             if(saw_milpsi_symbol): ret.append("The people she's been meeting are doing some kind of secret military experiments in a compound. I was taken to an interrogation room there. Everybody acted confused, and I started feeling foggy too. Then, big tentacled aliens came through a portal and killed everyone.")
@@ -48,10 +48,10 @@ init -2 python:
             if(knows_about_stargate): ret.append("There was a CIA research program called Project Stargate that attempted to use clairvoyance to perform psychic spying. Official documentation claims they contacted aliens from other dimensions.")
             if(knows_about_yipi): ret.append("The organization calling itself Yomiyama Industrial Products is some kind of heavy military intelligence operation, under direct control of the Diet. They identify teenagers with latent psychic powers through various tests. They take the promising ones and try to improve their abilities through a combination of potent drugs and intense training. The burnout rate is high: all but one of their volunteers have succumbed to major health problems and dropped out within six months.")
             if(koneko_unstuck_in_time): ret.append("I stabbed Koneko-chan with a ritual knife, and now she's unstuck in time with me!")
-            ret.append("\n")
+            ret.append("\n\n   ")
             ret.append("Shironeko is Kuroneko's older sister. She's lazy and hardly ever comes into school, but she's super competitive and very good with computers.")
             if(knows_about_alien_tech): ret.append("She told me about some documents she found, involving space ships made of genetically engineered alien plant life.")
-            return " ".join(ret)
+            return "{font=Abuget.ttf}"+(" ".join(ret))+"{/font}"
     def __str__(self):
         self.call()
 
