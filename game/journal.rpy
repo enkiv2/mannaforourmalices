@@ -51,7 +51,7 @@ init -2 python:
             ret.append("\n\n   ")
             ret.append("Shironeko is Kuroneko's older sister. She's lazy and hardly ever comes into school, but she's super competitive and very good with computers.")
             if(knows_about_alien_tech): ret.append("She told me about some documents she found, involving space ships made of genetically engineered alien plant life.")
-            return "{font=Abuget.ttf}"+(" ".join(ret))+"{/font}"
+            return "{font=angelina.TTF}"+(" ".join(ret))+"{/font}"
     def __str__(self):
         self.call()
 
