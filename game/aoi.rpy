@@ -203,8 +203,8 @@ label clone_racks:
                 aoi "It's too late. You could never love me, now that you know."
                 show aoi yandere
                 aoi "That's why you have to die. So we can be together."
-                "She made a quick motion with her hand, and I saw a flash of steel. Blood seeped into my shirt."
                 show aoi yandere2
+                "She made a quick motion with her hand, and I saw a flash of steel. Blood seeped into my shirt."
                 jump death
             "What is this place?":
                 ai "What is this place, Aoi-chan? And what are you doing here?"
@@ -225,8 +225,8 @@ label clone_racks:
     show aoi yandere
     "She was a few steps too close for comfort. I was pinned up against the barrier."
     aoi "I have no choice."
-    "She made a quick motion with her hand and I felt warm fluid soak through my shirt. Then..."
     show aoi yandere2
+    "She made a quick motion with her hand and I felt warm fluid soak through my shirt. Then..."
     $ knows_about_clone_racks = True
     jump death
 
