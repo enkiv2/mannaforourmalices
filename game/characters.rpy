@@ -20,6 +20,7 @@ image aoi hearteyes = "aoi hearteyes.png"
 image aoi pout = "aoi akimbo.png"
 image aoi blush = "aoi blush.png"
 image aoi yandere = "aoi yandere.png"
+image aoi yandere2 = "aoi yandere2.png"
 
 image side kuroneko = "kuroneko_icon.png"
 define kuroneko = Character("Fujinomiya Kuroneko", color="#aa0000", image="kuroneko")
