@@ -364,7 +364,7 @@ label go_home_early:
         n "I might loop again, so I should avoid extra effort."
     ai "It can wait. I'm really beat."
     "Mom" "Okay, well don't blame me if you smell like mothballs tomorrow."
-    "Mom" "Goodnight, sueetie."
+    "Mom" "Goodnight, sweetie."
     ai "Night, mom"
     scene bg morning
     scene bg black
