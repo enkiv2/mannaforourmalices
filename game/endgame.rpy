@@ -237,11 +237,14 @@ label fujinomiya_bad_end:
     ai "Let's check. There's no way they wouldn't have signalled to us by now if they were sent to bed."
     "We walked toward the house and stepped over another discarded beer can on the steps."
     "Inside the door were too many shoes."
+    scene bg shironeko bedroom dark
     "We turned the corner and there was too much blood."
     "Yakuza enforcer" "Looks like we've caught two more little kittens."
     "He lifted his bat."
     scene bg black
+    pause 0.1
     scene bg white
+    pause 0.1
     scene bg black with fade
-    # achievement.grant("Fujinomiya bad end")
+    $ achievement.grant("Fujinomiya bad end")
     return
