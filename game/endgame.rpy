@@ -1,5 +1,6 @@
 # The climax & endings
 label ritual:
+    play music "music/Infocalypse_-_Old_World_Order.mp3" fadein 5
     scene bg oss exterior night
     "As planned, Kuroneko met us in the convenience store bathroom with dark woolen robes. We put them on and then waited until a crowd of similarly-robed cultists walked past."
     "We hovered in the back, near the lodge's service door, as the cultists formed a rough ring around the magic circle and Kuroneko took her place in the center."
@@ -40,6 +41,7 @@ label ritual:
     if debt_erased:
         "Through the now-empty windowframe, I saw flames flickering in a nearby building"
     kuroneko "SACRIFICE. NOW."
+    play music "music/Infocalypse_-_Respiration.mp3"
     menu:
         "Aoi" if aoi_unstuck_in_time:
             jump aoi_bad_end
@@ -130,6 +132,7 @@ label endgame_clones:
         "ohfuckohfuckohfuck":
             jump sacrifice_now
 label endgame_aliens:
+    play music "music/Infocalypse_-_Grudge.mp3"
     ai "Koneko, can you contact the Others?"
     koneko "Yes, but..."
     ai "Tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
@@ -173,6 +176,7 @@ label aoi_bad_end:
     "Aoi looked at me tearfully and took the dagger in her hands"
     aoi "Of course."
     "She plunged it into her chest, and with all the stabbing we've been doing it took me a moment to..."
+    play music "music/Infocalypse_-_Mad_Dr._Chrome.mp3"
     hide aoi
     ai "AOI-CHANNN"
     "Sobs cramped me into a kneel and I gathered her up."
@@ -191,6 +195,7 @@ label aoi_bad_end:
     n "I killed you twice i killed you twice ikilledyoutwiceikilledyoutwice"
     scene bg black
     with fade
+    play music "music/Infocalypse_-_Dry_Bachelors.mp3"
     scene bg morning
     with fade
     "It's been almost a month."
