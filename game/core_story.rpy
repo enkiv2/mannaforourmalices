@@ -169,6 +169,10 @@ label dont_sneak_to_yomipoly:
     kuroneko "My sister's playing hooky again."
     show aoi happy at right
     aoi "Koneko-chan?"
+    scene koneko shojo with fade
+    scene bg classroom with fade
+    show kuroneko pout at left
+    show aoi happy at right
     kuroneko "Are you an idiot? Koneko hasn't so much as been tardy once since preschool!"
     if knows_about_koneko_telepathy and not knows_milpsi_shell_co_name:
         n "Something very weird is going on with Koneko-chan."
@@ -470,7 +474,9 @@ label clean_classroom:
 label ignore_box:
     "The glassware can wait. I think it's been here for weeks already anyway."
     "I look out the window. There's a solitary figure running around the track."
+    scene koneko shojo with fade
     n "Must be Koneko-chan. She sure works hard."
+    scene bg classroom
     if died:
         menu:
             "Continue tidying up.":
