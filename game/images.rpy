@@ -54,6 +54,7 @@ image bg shironeko bedroom = "shironeko bedroom.png"
 ####################### SPLASH IMAGES
 image splash fireworks = "fireworks.png"
 # Ai route
+image koneko shojo = "koneko shojo.png"
 image splash blood one = "blood 1.png"
 image splash blood two = "blood 2.png"
 # Kuroneko route
