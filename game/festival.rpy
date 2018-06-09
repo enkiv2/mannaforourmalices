@@ -1,5 +1,6 @@
 # Festival (good end)
 label festival:
+    play music "music/Infocalypse_-_scathing_frolic.mp3"
     scene bg downstairs
     "Mom" "Ai-chan, are you ready? Aoi-chan's already waiting!"
     ai "Yeah, just making some final adjustments."
@@ -26,6 +27,7 @@ label festival:
     ai "It's nice to enjoy the simple things in life once in a while."
     aoi "Good takoyaki isn't simple! Those people are artists."
     ai "Tell them that and they might even give you a discount."
+    play music "music/honey.mp3"
     scene bg festival
     show kuroneko yukata at right
     kuroneko "Just who I was looking for! Get caught in traffic?"
