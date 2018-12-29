@@ -115,11 +115,127 @@ label yakuza_party:
 # Notes: all the unstuck characters are allowed into the general party because the bouncer (old, shaved head, leering) thinks they're hot
 # however, to get physical access to the back room, we need to tell aoi to tell them she represents yomi poly & is there to broker a deal -- so we need to finish her arc too
 # koneko sneaks up behind a high-ranking guy, touches him on the neck, and runs away. He suddenly gets up and yells at an underling:
-# "Why the hell is the Fujinomiya debt still in this ledger?! They paid their sixty mil last week. Fix it right now and then go apologize, or you lose another finger!"
+# 
 # koneko complains about how icky their brains are / how disgusting it is to connect to someone telepathically
 # none of the girls are wearing a costume, but aoi is wearing cat ears
-    $ debt_erased = True
-    $ achievement.grant("Jubilee")
+    scene bg yakuza halloween party
+    "There's a mix of teens like us & permed low-level yakuza, mingling. Few are costumed."
+    "One hulking gorilla of a man in a poor-fitting black pinstripe suit, bowtie, and waistcoat stands in front of a curtain in the corner, looking uncomfortable. His eyes widen when he sees Aoi."
+    "Gorilla yakuza" "Mistress Tomoe!"
+    show aoi nekomimi
+    aoi "Taro-chan! It's been sooo long!"
+    "He bows deeply, blushing."
+    "Taro" "About three weeks, mistress."
+    aoi "Have you grown?"
+    "Taro" "Only horizontally, mistress. What brings you here?"
+    aoi "The party, of course!"
+    "Taro" "Oh! Of course. I thought maybe you had wanted to speak to Aniki."
+    ai "You know this guy?"
+    aoi "Yeah! Taro is Taro, y'know~"
+    "Taro" "The Yomiyama Crew owes a great deal to the Tomoe family. As the prestige of the university's research grows in certain circles, so does our influence in the syndicate."
+    show kuroneko pout at right
+    kuroneko "In other words, as long as Yomiyama is on the map, you guys can get payouts from military contractors?"
+    "Taro bows again."
+    "Taro" "Mistress Tomoe's friend is very astute."
+    aoi "Taro-chan! Taro-chan! Isn't my costume cute?!"
+    "Taro" "The ears suit you, mistress."
+    hide aoi
+    hide kuroneko
+    "Giving quick bows, we drift out of Taro's earshot."
+    ai "Hey, Kuro, is this the crew your folks have a debt to?"
+    show kuroneko pout
+    kuroneko "Sure is. This is that precise hive of scum and villany."
+    kuroneko "Aoi-san may have weight to throw around, but I don't think she can get it forgiven on her own."
+    if knows_about_yipi:
+        if koneko_unstuck_in_time:
+            ai "Not on her own."
+            ai "Aoi, can you get us behind that curtain? It doesn't need to be for long."
+            show aoi nekomimi at left
+            aoi "Abbbbsooolutely!"
+            ai "Koneko-chan, can your touch-telepathy inject ideas?"
+            show koneko at right
+            koneko "Yes, but..."
+            ai "I'm going to need you to take one for the team. The guy's bound to be fucking gross, but we can eliminate your debt & you won't have to be a guinea pig anymore."
+            n "Not that you can, considering the whole place was demolished by tentacle monsters. {b}What?!{/b}"
+            koneko "... Understood."
+            ai "Great. I love it when a plan comes the fuck together."
+            "We begin edging back toward the curtain."
+            aoi "Taro-chan, I think I should see your aniki after all. It'd be rude if I came all this way without at least saying hi."
+            "Taro" "Of course. You and your friends are welcome any time."
+            aoi "He's a very busy man, so we'll just pop in quick, OK?"
+            "Taro" "He will be happy to see you. Please stay as long as you want."
+            scene bg yakuza office
+            "We duck inside the curtain, careful to be quiet. We are behind a man at a fancy desk, reading papers. There is another man, at a less fancy desk, on the far side of the room."
+            "Koneko puts her hand on the man's shoulder, and he suddenly sits straight up. She flinches and hides behind us."
+            "Man at fancy desk" "Why the hell is the Fujinomiya debt still in this ledger?! They paid their sixty mil last week. Fix it right now and then go apologize, or you lose another finger!"
+            "Underling" "A-a-ah-Of course, right away, Aniki."
+            "We duck back through the curtain."
+            scene bg yakuza halloween party
+            show aoi nekomimi
+            aoi "He was a little too busy. We'll come back and pay our respects later."
+            "Aoi winks at Taro. Taro blushes."
+            $ debt_erased = True
+            $ achievement.grant("Jubilee")
+            ai "Girl, I didn't know you had it in you!"
+            aoi "Had what?"
+            ai "The ability and willingness to toy with a young man's heart!"
+            aoi "Heart? No way. That's just how Taro-chan is. You're the only one for me, Ai-chan~"
+            show kuroneko at right
+            kuroneko "He's clearly into you, Aoi-san."
+            show koneko at left
+            koneko "Affirmative."
+            aoi "No way. He's just shy, y'know."
+            aoi "..."
+            aoi "...."
+            show aoi nekomimi pout
+            aoi "Oh no. I'm terrible. I should go back and apologize right now."
+            ai "Hold your tits. This is for the greater good."
+            aoi "So it's ok?"
+            kuroneko "Absolutely justified."
+            "Koneko nods her head emphatically."
+    "We grabbed some refreshments from passing low-level soldiers, who had been dressed in bunny-girl outfits and told to circulate with platters."
+    "They were holding up remarkably well. Perhaps the Yomiyama Crew doesn't have to worry about eruptions of rage among their rank and file."
+    "My phone rang."
+    ai "Hello?"
+    "Mom (telephone)" "Hi, hon! Are you still at the party?"
+    ai "Sure am."
+    "Mom (telephone)" "Aoi-chan's folks called and asked me to make sure you took her home soon."
+    ai "They could have called me directly. Or her."
+    "Mom (telephone)" "They found Aoi's phone out of batteries and under her bed."
+    ai "Fair enough."
+    ai "Yo, Aoi-chan -- your phone's under your bed."
+    aoi "I thought I looked there!"
+    ai "OK, mom. I'll get her home right away."
+    "I hung up."
+    ai "Well, it's been real. I gotta take this one home."
+    show aoi nekomimi hearteyes
+    aoi "You're taking me hooooome???"
+    ai "To your home."
+    show aoi nekomimi pout
+    aoi "But you always take me there!"
+    ai "No complaining! Come on."
+    show aoi nekomimi
+    aoi "Bye Fujinomiya-san! Bye other Fujinomiya-san!"
+    scene bg street dark
+    show aoi nekomimi blush
+    "Despite all her complaints, once she was out the door, she happily clung to my arm."
+    n "Now, I just have to watch out for knife-wielding dwarves in red rain coats."
+    ai "Ok, end of the line. All passengers must exit."
+    show aoi nekomimi pout
+    aoi "It's always too soon."
+    "I ring the bell."
+    ai "Delivery for the Tomoe family! One girl, fun-sized, must present stamp on reciept!"
+    "The door opens."
+    "Mrs Tomoe" "Thank you, Ai-chan."
+    ai "All in a day's work."
+    hide aoi
+    scene bg downstairs
+    ai "Mom, I'm beat. I've already eaten, so I'm just gonna crash, OK?"
+    "Mom" "Sleep well!"
+    scene bg morning
+    "The bed looked so inviting. It's nice to get to sleep without being killed."
+    scene bg black
+    jump halloween_night
 label halloween_night:
     if halloween_janus_head_inverted:
         jump halloween
