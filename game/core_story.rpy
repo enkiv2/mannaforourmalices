@@ -411,7 +411,15 @@ label lunch_roof:
     jump afternoon_classes
 label lunch_cafeteria:
     scene bg cafeteria
-    comment "XXX fill in lunch_cafeteria"
+    "The cafeteria is crowded, and smells strongly of spices and overcooked meat."
+    "A swarm of people circles the stuffed bread vendor. They will have sold out by this point, like they do every day."
+    "People who have decided to purchase less popular meals are milling around with trays, or sitting at tables."
+    "I don't see anybody I know."
+    "I find a quiet corner and dig into my bento."
+    "Eating a packed bento in a cafeteria is underrated. Most of the stress in cafeteria dining comes from trying to buy food, after all."
+    "I guess it's different for the terminally popular, but after my tragic high school debut debacle, I don't have to worry about that."
+    "Who would have thought ni-gata & newsboy caps would ever go out of style? I wasn't just mocked, but written up for dress code violation too."
+    "That might have been the open shirt & chest wrappings, though."
     jump afternoon_classes
 label lunch_classroom:
     # TODO: add more variation to this section, based on flags
