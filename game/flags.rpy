@@ -73,6 +73,7 @@ define knows_janus_role = False
 define knows_zeus_role = False
 define has_knife = False
 define kuroneko_unstuck_in_time = False
+define kuroneko_unstuck_first_time = False
 $ achievement.register("Fujinomiya bad end")
 
 # Koneko route

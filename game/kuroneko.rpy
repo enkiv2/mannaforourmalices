@@ -119,6 +119,33 @@ label kuroneko_book_content:
 label kuroneko_masonry_roof:
     show kuroneko pout
     "Kuroneko's expression suddenly changed, becoming serious and almost even respectful."
+    if kuroneko_unstuck_in_time:
+        if kuroneko_unstuck_first_time:
+            kuroneko "You transmigrated me."
+            ai "I guess I did."
+            ai "I didn't mean to. The knife just--"
+            kuroneko "The knife has {i}telos{/i}. It knows its task."
+            kuroneko "You're transmigrated too?"
+            ai "Not by choice. I got stabbed on the street. I keep getting stabbed on the street."
+            kuroneko "By a dwarf in a red rain coat?"
+            ai "Wh-- No. I don't know. It was from behind."
+            kuroneko "You're the preliminary sacrifice, then. I guess it's too late to tell you not to get involved."
+            ai "Why are you involved?"
+            kuroneko "My parents... We need the money."
+            kuroneko "They couldn't really afford to send the three of us to private school. They took money from the yakuza. I don't think Shironeko has noticed."
+            ai "I see."
+            ai "The ritual --"
+            kuroneko "I thought they were rich nutjobs. I didn't think any of what they were doing would actually work."
+            ai "What is the ritual supposed to do?"
+            kuroneko "Transmigrate everybody. Freed from the body and from time. Some bullshit about being freed from regrets, too."
+            ai "I heard the guy in charge failed out of music school."
+            kuroneko "Sounds about right."
+            ai "Is there any way to stop it?"
+            kuroneko "The ritual, and all the backup stuff to reverse it in case it goes wrong, is in a book of shadows under the altar. I'll take you there."
+        else:
+            kuroneko "Are we going to transmigrate someone else?"
+            ai "Something like that."
+        jump show_to_janus_bust
     "She offered me her hand and we performed a strange handshake."
     n "Jesus, I guess I have to pretend to be her superior now?"
     ai "I have... graduated you to the status of... um... fellow craft... for a reason!"
@@ -154,17 +181,36 @@ label zeus_info:
 label show_to_janus_bust:
    kuroneko "Come along, then."
    scene bg hallway
-   pause 2
+   "She leads me downstairs..."
    scene bg street
-   pause 2
+   "... out the building ..."
    scene bg oss exterior
-   pause 2
+   "... to the lodge ..."
    scene bg oss altar
-   pause 2
+   "... and into the sanctum."
    if janus_head_inverted:
        scene bg altar inverted
    else:
        scene bg altar
+    if kuroneko_unstuck_in_time:
+        if kuroneko_unstuck_first_time:
+            kuroneko "The book should be under--"
+            "She rummages through a little shelf under the altar proper, hidden by the altar cloth draped over it."
+            kuroneko "Here it is!"
+            "The book is leather-bound, with an inverted pentagram inlayed in gold leaf on the front."
+            "She opens it, and flips through."
+            kuroneko "The pages -- they're torn out!"
+            kuroneko "I know the pages on how to abort the ritual were here. I saw them a few weeks ago, but only very briefly."
+            ai "Any more leads?"
+            kuroneko "If their metaphysics are right, we should be able to..."
+            kuroneko "See, Janus is the god of threshholds. His head is two-faced. One face is old, and one is young."
+            kuroneko "If you move the bust to face the wrong way on the year wheel, the transmigrated souls should..."
+            $ janus_head_inverted = True
+            scene bg altar inverted
+            ai "Should what?"
+            kuroneko "Should end up on the far side of the year wheel."
+            kuroneko "OK, time to get back to class."
+            jump afternoon_classes
    menu:
        "Pick up the knife":
            jump pick_up_knife
@@ -197,6 +243,7 @@ label pick_up_knife:
         "Blood drips down from the new hole in the bottom of her chin, and the knife pulls clean out as her legs fall out from beneath her."
         "Static fills my vision as I, too, collapse."
         $ kuroneko_unstuck_in_time = True
+        $ kuroneko_unstuck_first_time = True
         jump death
     ai "Now, we go back to class."
     jump afternoon_classes
