@@ -15,6 +15,7 @@ define ai = Character("Akagi Ai", color="#000000", image="ai")
 
 image side aoi = "aoi_icon.png"
 define aoi = Character("Tomoe Aoi", color="#0000af", image="aoi")
+image aoi normal = "aoi.png"
 image aoi happy = "aoi.png"
 image aoi hearteyes = "aoi hearteyes.png"
 image aoi pout = "aoi akimbo.png"
@@ -33,6 +34,7 @@ image aoi yandere2 = "aoi yandere2.png"
 image side kuroneko = "kuroneko_icon.png"
 define kuroneko = Character("Fujinomiya Kuroneko", color="#aa0000", image="kuroneko")
 image kuroneko = "kuroneko.png"
+image kuroneko normal = "kuroneko.png"
 image kuroneko pout = "kuroneko.png" # XXX
 image kuroneko happy = "kuroneko smile.png"
 image kuroneko yukata normal = "kuroneko yukata.png"
@@ -41,6 +43,7 @@ image kuroneko yukata happy = "kuroneko yukata smile.png"
 
 image side shironeko = "shironeko_icon.png"
 define shironeko = Character("Fujinomiya Shironeko", color="#77aaaa", image="shironeko")
+image shironeko = "shironeko.png"
 image shironeko happy = "shironeko happy.png"
 image shironeko normal = "shironeko.png"
 image shironeko pout = "shironeko pout.png"
@@ -49,6 +52,7 @@ image shironeko surprised = "shironeko surprised.png"
 image side koneko = "koneko_icon.png"
 define koneko = Character("Fujinomiya Koneko", color="#777700", image="koneko")
 image koneko = "koneko.png"
+image koneko normal = "koneko.png"
 image koneko happy = "koneko smile.png"
 image koneko pout = "koneko pout.png"
 image koneko yukata normal = "koneko yukata.png"
@@ -57,6 +61,7 @@ image koneko yukata pout = "koneko yukata pout.png"
 
 image side mimi = "mimi_icon.png"
 define mimi = Character("Yamada Mimi", color="#ff7777", image="mimi")
+image mimi = "mimi.png"
 image mimi normal = "mimi.png"
 image mimi angry = "mimi angry.png"
 image mimi pensive = "mimi pensive.png"
