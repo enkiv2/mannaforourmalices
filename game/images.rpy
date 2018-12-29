@@ -24,9 +24,9 @@ image bg oss altar = "oss altar.png"
 image bg altar = "altar.png"
 image bg altar inverted = "altar inverted.png"
 image bg oss exterior night = "oss exterior night.png"
-#image bg oss exterior night violin = "oss exterior night violin.png"
+image bg oss exterior night violin = "oss exterior night violin.png"
 image bg oss exterior night collapse = "oss exterior night collapse.png"
-#image bg oss exterior night collapse portal = "oss exterior night collapse portal.png"
+image bg oss exterior night collapse portal = "oss exterior night collapse portal.png"
 # Aoi route
 image bg science room = "science room.png"
 image bg yomi poly entrance = "yomi poly entrance.png"
@@ -49,6 +49,7 @@ image bg milpsi entrance = "milpsi entrance.png"
 # Shironeko route
 image bg fujinomiya household = "fujinomiya residence.png"
 image bg shironeko bedroom = "shironeko bedroom.png"
+image bg shironeko bedroom night = "shironeko bedroom night.png"
 
 
 ####################### SPLASH IMAGES
