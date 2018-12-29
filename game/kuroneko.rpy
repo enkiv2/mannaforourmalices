@@ -177,7 +177,34 @@ label zeus_info:
             kuroneko "Sen-ya-rito sennnn-ya-rito, mo ra-ga-na i-wa-ko~~"
             "I hurry away before Kuroneko notices I've pranked her."
             jump afternoon_classes
-
+label lodge_halloween:
+    kuroneko "Come along, then. We'd better check for those pages, quick."
+    scene bg hallway
+    "She leads me downstairs..."
+    scene bg street
+    "... out the building ..."
+    scene bg oss exterior
+    "... to the lodge ..."
+    scene bg oss altar
+    "... and into the sanctum."
+    if halloween_janus_head_inverted:
+        scene bg altar inverted
+    else:
+        scene bg altar
+    "She rummages under the altar, and pulls out the book."
+    kuroneko "OK, here. It says... we can only abort the ritual after the promethean composition has begun, by smashing the altar and offering a... sacrifice."
+    ai "What kind of sacrifice?"
+    kuroneko "Judging by... what they did to you, human probably."
+    ai "Ugh."
+    kuroneko "Well... I guess it's a noble one. Otherwise, the whole world's gonna be dealing with eternal recurrence."
+    ai "I guess. Still... These guys are pretty kill-happy. Maybe we should see if just smashing the altar will suffice."
+    kuroneko "Assuming we can ever get back to that date. This ritual isn't really meant for supporting inter-equinox time travel, so I'm not so sure it'll work."
+    ai "You understand their metaphysics pretty well. Do you think the sacrifice is necessary?"
+    kuroneko "You and I needed to be killed to transmigrate. It stands to reason that stopping time travel requires as much energy as starting it."
+    ai "..."
+    $ seen_missing_pages = True
+    ai "We ought to get back."
+    jump halloween_afternoon
 label show_to_janus_bust:
    kuroneko "Come along, then."
    scene bg hallway

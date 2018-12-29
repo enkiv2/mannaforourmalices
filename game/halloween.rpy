@@ -101,7 +101,15 @@ label halloween:
     kuroneko "The local syndicate is having a Halloween party, remember? A kind of 'thank you' for all the protection money they extort..."
     ai "Halloween? But it's..."
     "The board says 10/31."
-    
+    if kuroneko_unstuck_in_time:
+        if kuroneko_unstuck_first_time:
+            jump lodge_halloween
+    comment "XXX fill in morning"
+    jump halloween_afternoon
+label halloween_afternoon
+    scene bg classroom halloween
+    comment "XXX fill in afternoon"
+    jump yakuza_party
 label yakuza_party:
 # getting the yakuza to wipe debts requires Koneko to do touch telepathy, which means her arc needs to be complete
 # Notes: all the unstuck characters are allowed into the general party because the bouncer (old, shaved head, leering) thinks they're hot
