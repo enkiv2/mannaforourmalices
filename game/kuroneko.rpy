@@ -168,8 +168,8 @@ label show_to_janus_bust:
    menu:
        "Pick up the knife":
            jump pick_up_knife
-        "Invert the Janus head":
-            jump invert_head
+       "Invert the Janus head":
+           jump invert_head
 label invert_head:
     if janus_head_inverted:
         $ janus_head_inverted = False
