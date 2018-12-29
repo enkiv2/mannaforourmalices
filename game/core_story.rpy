@@ -389,10 +389,10 @@ label find_books:
 label lunch_roof:
     scene bg roof
     "It's cold up here. The wind has knives and an intent to kill."
+    show kuroneko pout
     "Or maybe the intent to kill is Kuroneko's. She's leaning against the railing, glaring down into the distance."
     "The wind keeps picking up her hair and throwing it in her face."
     ai "It'd be a nice day if we were ice-fishing, but hanging out on the roof in this weather is just fucking unpleasant."
-    show kuroneko
     kuroneko "What, did you have a marital spat?"
     menu:
         "\"I now present my right hand in token of the continuance of friendship and brotherly love...\"" if knows_masonic_initiation_phrase:
@@ -405,7 +405,7 @@ label lunch_roof:
             kuroneko "So, do you actually have anything relevant to say? I'm kind of busy."
             n "Busy with what? You're staring into space in the middle of a windstorm."
             ai "No, I just thought I'd be friendly."
-            "I found a spot that sheltered me somewhat from the elenents and started to eat my bento."
+            "I found a spot that sheltered me somewhat from the elements and started to eat my bento."
             "Several pieces were caught by gusts and carried away to lands unknown. So it goes."
             "When I left, Kuroneko still hadn't moved from that spot."
     jump afternoon_classes
