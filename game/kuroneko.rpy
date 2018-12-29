@@ -167,34 +167,39 @@ label show_to_janus_bust:
        scene bg altar
    menu:
        "Pick up the knife":
-           if kuroneko_unstuck_in_time:
-                "The knife feels heavy in my hands, but calm. It's as though I am holding the leash of a guard dog who, for now, is simply alert and cautious."
-                "There is none of the force of before."
-                $ has_knife = True
-           else:
-                "I barely touch the grip, but it seems to jump into my hand."
-                show kuroneko pout
-                "It twists like a snake, but I can't let go -- it won't let me."
-                ai "Hey, what's--"
-                "It pulls my arm over my head and prepares to..."
-                ai "Get out of the--"
-                "... sweep down in a powerful arc, right into the top of Kuroneko's head."
-                hide kuroneko
-                ai "Shit. Shit shit shit."
-                "Blood drips down from the new hole in the bottom of her chin, and the knife pulls clean out as her legs fall out from beneath her."
-                "Static fills my vision as I, too, collapse."
-                $ kuroneko_unstuck_in_time = True
-                jump death
+           jump pick_up_knife
         "Invert the Janus head":
-            if janus_head_inverted:
-                $ janus_head_inverted = False
-                scene bg altar
-            else:
-                $ janus_head_inverted = True
-                scene bg altar inverted
-       ai "Now, we go back to class."
-       jump afternoon_classes
-
+            jump invert_head
+label invert_head:
+    if janus_head_inverted:
+        $ janus_head_inverted = False
+        scene bg altar
+    else:
+        $ janus_head_inverted = True
+        scene bg altar inverted
+    ai "Now, we go back to class."
+    jump afternoon_classes
+label pick_up_knife:
+    if kuroneko_unstuck_in_time:
+        "The knife feels heavy in my hands, but calm. It's as though I am holding the leash of a guard dog who, for now, is simply alert and cautious."
+        "There is none of the force of before."
+        $ has_knife = True
+    else:
+        "I barely touch the grip, but it seems to jump into my hand."
+        show kuroneko pout
+        "It twists like a snake, but I can't let go -- it won't let me."
+        ai "Hey, what's--"
+        "It pulls my arm over my head and prepares to..."
+        ai "Get out of the--"
+        "... sweep down in a powerful arc, right into the top of Kuroneko's head."
+        hide kuroneko
+        ai "Shit. Shit shit shit."
+        "Blood drips down from the new hole in the bottom of her chin, and the knife pulls clean out as her legs fall out from beneath her."
+        "Static fills my vision as I, too, collapse."
+        $ kuroneko_unstuck_in_time = True
+        jump death
+    ai "Now, we go back to class."
+    jump afternoon_classes
 label kuroneko_lodge_info:
     kuroneko "Frater Zeus."
     $ knows_zeus_role = True
