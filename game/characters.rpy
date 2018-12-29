@@ -35,10 +35,10 @@ image side kuroneko = "kuroneko_icon.png"
 define kuroneko = Character("Fujinomiya Kuroneko", color="#aa0000", image="kuroneko")
 image kuroneko = "kuroneko.png"
 image kuroneko normal = "kuroneko.png"
-image kuroneko pout = "kuroneko.png" # XXX
+image kuroneko pout = "kuroneko pout.png"
 image kuroneko happy = "kuroneko smile.png"
 image kuroneko yukata normal = "kuroneko yukata.png"
-image kuroneko yukata pout = "kuroneko yukata.png" # XXX
+image kuroneko yukata pout = "kuroneko pout yukata.png"
 image kuroneko yukata happy = "kuroneko yukata smile.png"
 
 image side shironeko = "shironeko_icon.png"
