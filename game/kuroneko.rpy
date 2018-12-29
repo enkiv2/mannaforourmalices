@@ -42,7 +42,6 @@ label music_room:
     show kuroneko pout
     kuroneko "Just don't interrupt, OK?"
     ai "Fine, fine."
-    show kuroneko normal
     scene splash kuroneko violin
     with dissolve
     play music "music/mystic chord practice.mp3"
@@ -57,6 +56,7 @@ label music_room:
     kuroneko "This score is just really weird."
     extend "\nIt's the same six notes over and over in different combinations."
     ai "What's so weird about that?"
+    show kuroneko pout
     kuroneko "It wants me to play combinations of notes that normally would be done on two different instruments."
     kuroneko "In order to play both notes at the same time on the same instrument I have to hold my fingers like..."
     scene splash kuroneko fingering
@@ -64,11 +64,11 @@ label music_room:
     "Her fingers were held in a kind of claw shape, and her wrist was at an awkward angle. Some fingers were pressing on multiple strings simultaneously at different angles."
     kuroneko "I have to go from that to another equally complicated chord in the space of one beat."
     scene bg music room
-    show kuroneko normal
+    show kuroneko pout
     kuroneko "The whole piece is like that."
     ai "Why don't you play something else? Or get a second violinist?"
-    kuroneko "You know those weirdos out in that building with the gold roof?"
-    ai "The cylindrical building? Out behind the convenience store?"
+    kuroneko "You know those weirdos out in that building with the green roof?"
+    ai "The octagonal building? Out behind the convenience store?"
     kuroneko "Yeah. They gave me this."
     ai "And?"
     show kuroneko happy
@@ -117,6 +117,7 @@ label kuroneko_book_content:
         "Nevermind":
             jump lunch_library
 label kuroneko_masonry_roof:
+    show kuroneko pout
     "Kuroneko's expression suddenly changed, becoming serious and almost even respectful."
     "She offered me her hand and we performed a strange handshake."
     n "Jesus, I guess I have to pretend to be her superior now?"
@@ -128,7 +129,77 @@ label kuroneko_masonry_roof:
     menu:
         "Who is your usual Worshipful Master at the O:.S:.S Lodge?" if knows_about_oss:
             jump kuroneko_lodge_info
-        "What is the role of Janus in or practices?" if knows_about_janus:
+        "What is the role of Janus in our practices?" if knows_about_janus:
+            jump kuroneko_janus_info
+        "What is the role of Scriabin in our practices?" if knows_about_scriabin:
+            jump kuroneko_scriabin_info
+        "I come on behalf of Frater Zeus" if knows_zeus_role:
+            jump zeus_info
+        "Who is the master who makes the grass green?":
+            kuroneko "I... Uh..."
+            ai "Test failed! I hereby revoke your fellow craft status!"
+            "I hurry away before Kuroneko can ask me any questions."
+            jump afternoon_classes
+
+label zeus_info:
+    menu:
+        "Take me to the lodge, and show me the Janus bust." if knows_janus_role:
+            jump show_to_janus_bust
+        "Hop on one foot while singing Touryanse backwards":
+            "She looks confused for a moment, and then starts to do it."
+            kuroneko "Sen-ya-rito sennnn-ya-rito, mo ra-ga-na i-wa-ko~~"
+            "I hurry away before Kuroneko notices I've pranked her."
+            jump afternoon_classes
+
+label show_to_janus_bust:
+   kuroneko "Come along, then."
+   scene bg hallway
+   pause 2
+   scene bg street
+   pause 2
+   scene bg oss exterior
+   pause 2
+   scene bg oss altar
+   pause 2
+   if janus_head_inverted:
+       scene bg altar inverted
+   else:
+       scene bg altar
+   menu:
+       "Pick up the knife":
+           if kuroneko_unstuck_in_time:
+               "The knife feels heavy in my hands, but calm. It's as though I am holding the leash of a guard dog who, for now, is simply alert and cautious."
+               "There is none of the force of before."
+               $ has_knife = True
+           else:
+               "I barely touch the grip, but it seems to jump into my hand."
+               show kuroneko pout
+               "It twists like a snake, but I can't let go -- it won't let me."
+               ai "Hey, what's--"
+               "It pulls my arm over my head and prepares to..."
+               ai "Get out of the--"
+               "... sweep down in a powerful arc, right into the top of Kuroneko's head."
+               hide kuroneko
+               ai "Shit. Shit shit shit."
+               "Blood drips down from the new hole in the bottom of her chin, and the knife pulls clean out as her legs fall out from beneath her."
+               "Static fills my vision as I, too, collapse."
+               $ kuroneko_unstuck_in_time = True
+               jump death
+        "Invert the Janus head":
+            if janus_head_inverted:
+                $ janus_head_inverted = False
+                scene bg altar
+            else:
+                $ janus_head_inverted = True
+                scene bg altar inverted
+       ai "Now, we go back to class."
+       jump afternoon_classes
+
+label kuroneko_lodge_info:
+    kuroneko "Frater Zeus."
+    $ knows_zeus_role = True
+    menu:
+        "What is the role of Janus in our practices?" if knows_about_janus:
             jump kuroneko_janus_info
         "What is the role of Scriabin in our practices?" if knows_about_scriabin:
             jump kuroneko_scriabin_info
@@ -137,16 +208,32 @@ label kuroneko_masonry_roof:
             ai "Test failed! I hereby revoke your fellow craft status!"
             "I hurry away before Kuroneko can ask me any questions."
             jump afternoon_classes
-
-label kuroneko_lodge_info:
-    comment "XXX fill in lodge info"
-    jump afternoon_classes
 label kuroneko_janus_info:
-    comment "XXX fill in janus info"
-    jump afternoon_classes
+    kuroneko "Janus, lord of threshholds, has a special role at the equinox. The Janus bust is the representative of time in the ritual of transmigration."
+    $ knows_janus_role = True
+    menu:
+        "Who is your usual Worshipful Master at the O:.S:.S Lodge?" if knows_about_oss:
+            jump kuroneko_lodge_info
+        "What is the role of Scriabin in our practices?" if knows_about_scriabin:
+            jump kuroneko_scriabin_info
+        "Who is the master who makes the grass green?":
+            kuroneko "I... Uh..."
+            ai "Test failed! I hereby revoke your fellow craft status!"
+            "I hurry away before Kuroneko can ask me any questions."
+            jump afternoon_classes
 label kuroneko_scriabin_info:
-    comment "XXX fill in scriabin info"
-    jump afternoon_classes
+    kuroneko "Scriabin formulated the ritual of the transmigration, having understood the hidden power of the Prometheus Chord."
+    $ knows_scriabin_role = True
+    menu:
+        "Who is your usual Worshipful Master at the O:.S:.S Lodge?" if knows_about_oss:
+            jump kuroneko_lodge_info
+        "What is the role of Janus in our practices?" if knows_about_janus:
+            jump kuroneko_janus_info
+        "Who is the master who makes the grass green?":
+            kuroneko "I... Uh..."
+            ai "Test failed! I hereby revoke your fellow craft status!"
+            "I hurry away before Kuroneko can ask me any questions."
+            jump afternoon_classes
 
 # Notes on dagger mechanic:
 # Stabbing someone with the ritual dagger forces their soul from their body but also kills anyone else who is unstuck

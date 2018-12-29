@@ -7,6 +7,7 @@ $ achievement.register("Some chuunibyo BS") # >2 deaths
 define midnight_loop = False
 define in_2011 = False
 $ achievement.register("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
+define janus_head_inverted = False
 define halloween_janus_head_inverted = False
 # Kuroneko's route unlocks some clues about the mechanisms by which the out of body time warp works.
 # Objects or boundaries can be destroyed; one object shifts the time frame from May Eve 2012 to Halloween 2011,
@@ -67,6 +68,10 @@ define knows_kuroneko_book_list = False
 define knows_masonic_initiation_phrase = False
 define knows_about_scriabin = False
 define knows_about_janus = False
+define knows_scriabin_role = False
+define knows_janus_role = False
+define knows_zeus_role = False
+define has_knife = False
 define kuroneko_unstuck_in_time = False
 $ achievement.register("Fujinomiya bad end")
 

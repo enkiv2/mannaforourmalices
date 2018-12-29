@@ -599,6 +599,13 @@ label rebirth:
     $ died = True
     $ achievement.grant("Stabbed in the back")
     if in_2011:
+        if halloween_janus_head_inverted:
+            $ in_2011 = False
+    else:
+        if janus_head_inverted:
+            $ achievement.grant("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
+            $ in_2011 = True
+    if in_2011:
         jump halloween
     jump core_story
 
