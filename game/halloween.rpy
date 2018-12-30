@@ -193,6 +193,9 @@ label yakuza_party:
             aoi "So it's ok?"
             kuroneko "Absolutely justified."
             "Koneko nods her head emphatically."
+    hide kuroneko
+    hide aoi
+    hide koneko
     "We grabbed some refreshments from passing low-level soldiers, who had been dressed in bunny-girl outfits and told to circulate with platters."
     "They were holding up remarkably well. Perhaps the Yomiyama Crew doesn't have to worry about eruptions of rage among their rank and file."
     "My phone rang."
@@ -237,6 +240,8 @@ label yakuza_party:
     scene bg black
     jump halloween_night
 label halloween_night:
+    scene bg black
+    pause 1
     if halloween_janus_head_inverted:
         jump halloween
     jump core_story
