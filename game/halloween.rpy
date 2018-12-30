@@ -106,7 +106,7 @@ label halloween:
             jump lodge_halloween
     comment "XXX fill in morning"
     jump halloween_afternoon
-label halloween_afternoon
+label halloween_afternoon:
     scene bg classroom halloween
     comment "XXX fill in afternoon"
     jump yakuza_party
