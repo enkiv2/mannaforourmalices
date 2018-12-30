@@ -219,25 +219,25 @@ label show_to_janus_bust:
        scene bg altar inverted
    else:
        scene bg altar
-    if kuroneko_unstuck_in_time:
-        if kuroneko_unstuck_first_time:
-            kuroneko "The book should be under--"
-            "She rummages through a little shelf under the altar proper, hidden by the altar cloth draped over it."
-            kuroneko "Here it is!"
-            "The book is leather-bound, with an inverted pentagram inlayed in gold leaf on the front."
-            "She opens it, and flips through."
-            kuroneko "The pages -- they're torn out!"
-            kuroneko "I know the pages on how to abort the ritual were here. I saw them a few weeks ago, but only very briefly."
-            ai "Any more leads?"
-            kuroneko "If their metaphysics are right, we should be able to..."
-            kuroneko "See, Janus is the god of threshholds. His head is two-faced. One face is old, and one is young."
-            kuroneko "If you move the bust to face the wrong way on the year wheel, the transmigrated souls should..."
-            $ janus_head_inverted = True
-            scene bg altar inverted
-            ai "Should what?"
-            kuroneko "Should end up on the far side of the year wheel."
-            kuroneko "OK, time to get back to class."
-            jump afternoon_classes
+   if kuroneko_unstuck_in_time:
+       if kuroneko_unstuck_first_time:
+           kuroneko "The book should be under--"
+           "She rummages through a little shelf under the altar proper, hidden by the altar cloth draped over it."
+           kuroneko "Here it is!"
+           "The book is leather-bound, with an inverted pentagram inlayed in gold leaf on the front."
+           "She opens it, and flips through."
+           kuroneko "The pages -- they're torn out!"
+           kuroneko "I know the pages on how to abort the ritual were here. I saw them a few weeks ago, but only very briefly."
+           ai "Any more leads?"
+           kuroneko "If their metaphysics are right, we should be able to..."
+           kuroneko "See, Janus is the god of threshholds. His head is two-faced. One face is old, and one is young."
+           kuroneko "If you move the bust to face the wrong way on the year wheel, the transmigrated souls should..."
+           $ janus_head_inverted = True
+           scene bg altar inverted
+           ai "Should what?"
+           kuroneko "Should end up on the far side of the year wheel."
+           kuroneko "OK, time to get back to class."
+           jump afternoon_classes
    menu:
        "Pick up the knife":
            jump pick_up_knife
