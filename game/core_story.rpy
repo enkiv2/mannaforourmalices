@@ -533,7 +533,8 @@ label take_nap:
     n "{cps=1}zz{/cps}Oh shit"
     scene bg classroom dark
     n "Shitfuck"
-label walk_home:
+    jump walk_home_from_classroom
+label walk_home_from_classroom:
     scene bg classroom dark
     stop music
     n "Shit"
@@ -542,6 +543,8 @@ label walk_home:
     "I gather my things and head home."
     scene bg hallway dark
     pause 1
+    jump walk_home
+label walk_home:
     scene bg street dark
     play music "music/Infocalypse_-_Light.mp3"
     if died is False:
