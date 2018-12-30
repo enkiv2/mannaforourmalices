@@ -384,7 +384,7 @@ label find_books:
         "Find the books Kuroneko was into" if knows_kuroneko_book_list:
             jump kuroneko_book_content
         "Find a manga or something":
-            "The manga section hasn't been updated since last year. But, GYO is always worth a re-read."
+            "The library hasn't gotten the new Golgo 13 tankoban yet, so I reread Devilman instead."
             jump lunch_library
 label lunch_roof:
     scene bg roof
