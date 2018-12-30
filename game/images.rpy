@@ -13,6 +13,8 @@ image bg hallway dark = "hallway dark.png"
 image bg library = "library.png"
 image bg roof = "roof.png"
 image bg cafeteria = "cafeteria.png"
+image bg yakuza halloween party = "yakuza halloween party.png"
+image bg yakuza office = "yakuza office.png"
 image bg fujinomiya household dark = "fujinomiya residence night.png"
 image bg festival = "festival.png"
 # Ai route
