@@ -486,7 +486,7 @@ label afternoon_classes:
             jump clean_classroom
         "Deliver printouts":
             jump deliver_printouts
-        "Stab Koneko" if has_knife and not kuroneko_unstuck_in_time:
+        "Stab Koneko" if has_knife and not koneko_unstuck_in_time:
             scene bg hallway
             "The knife practically dragged me downstairs."
             scene bg track
