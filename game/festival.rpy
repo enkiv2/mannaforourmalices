@@ -80,6 +80,7 @@ label festival:
     "Just then, all the stall lights went out."
     "{b}Pop pop pop{/b}"
     "{b}BOOM{/b}"
+    window hide
     scene splash fireworks with dissolve
     pause 2
     $ achievement.grant("Tama-ya!")

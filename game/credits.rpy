@@ -1,5 +1,6 @@
 # Ending credits
 label credits:
+    window hide
     scene bg black with dissolve
     play music "music/Infocalypse_-_Hawkhead_Falconer.mp3"
     centered "{color=#fff}Story: {a=http://www.lord-enki.net}{color=#fff}John Ohno{/color}{/a}{/color}"
@@ -18,5 +19,6 @@ label credits:
     scene bg black with dissolve
     centered "{color=#fff}A {/color}{color=#f00}D{color=#fa0}o{color=#ff0}u{color=#0f0}b{color=#00f}l{color=#f0f}e {color=#f00}M{color=#0f0}o{color=#ff0}j{color=#f0f}o{color=#fff} Production{/color}"
     $ achievement.grant("Complete")
+    window show
     return
 
