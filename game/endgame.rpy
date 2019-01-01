@@ -31,7 +31,7 @@ label ritual:
     $ altar_destroyed = True
     scene bg oss exterior night
     play music "music/Infocalypse_-_They_Do_Not_Have_Any_Insides.mp3"
-    show kuroneko robe
+    show kuroneko robe pout
     "The merry little dances of the airborne grasses became manic spins, and gusts like huge fists shoved cultists down or sent them up."
     "Kuroneko ducked into the lodge. The dagger was still squirming against my hand."
     kuroneko "Sacrifice! Now!"
@@ -39,7 +39,7 @@ label ritual:
     kuroneko "I thought we'd have more time, but something's angry out there."
     "A large piece of roofing tore off the building and whipped around back through the far window, landing neatly beside me. The dagger seemed attracted to it."
     scene bg oss exterior night collapse
-    show kuroneko robe
+    show kuroneko robe pout
     if debt_erased:
         "Through the now-empty windowframe, I saw flames flickering in a nearby building"
     kuroneko "SACRIFICE. NOW."
@@ -188,7 +188,7 @@ label aoi_bad_end:
     ai "I LOVE YOU"
     n "I've made"
     ai "oh fuck oh jesus"
-    show kuroneko robe at left
+    show kuroneko robe pout at left
     kuroneko "It wasn't your..."
     kuroneko "You had no choice."
     "I glared at her from behind Aoi's limp form."
