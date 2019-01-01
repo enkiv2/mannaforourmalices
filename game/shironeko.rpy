@@ -64,6 +64,7 @@ label alien_tech:
     shironeko "He had a bug up his ass about aliens. Americans are weird like that sometimes. Anyway, I wouldn't normally bother but this thing was locked down tight so I decided to make a little wager with him."
     ai "What were the terms?"
     shironeko "He was always hitting on me, so I said if he got in first I'd show him my tits. If I got in first he'd give me his stash of cracked passwords."
+    n "Who do you think you are, Fujiko Mine?"
     shironeko "I won, obviously. But, damn it, the nutjob was right."
     shironeko "That machine belonged to a US military base right here in Yomiyama, set up in the 50s. And, for whatever reason, they decided to store all their weird-ass UFO related research on machines in Japan."
     shironeko "He wasn't pleased after I leaked him the documents. Too weird for his blood."
