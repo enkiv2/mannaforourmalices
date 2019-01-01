@@ -493,6 +493,7 @@ label afternoon_classes:
             "I walked out onto the track, a direct line to where Koneko was running on the far side."
             "As she passed, the blade's cuts made festive streamers of crimson blood."
             "She picked up speed, trying to escape, but a knick is all you need from this blade, and soon the same torpor that had made her stumble and collapse was also sucking my soul down into the outside of time."
+            $ koneko_unstuck_in_time = True
             jump death
         "Disrupt the ritual" if seen_missing_pages:
             play music "music/Spontaneous Salmon.mp3"
