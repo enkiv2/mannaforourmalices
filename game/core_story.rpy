@@ -470,6 +470,47 @@ label afternoon_classes:
             jump clean_classroom
         "Deliver printouts":
             jump deliver_printouts
+        "Disrupt the ritual" if seen_missing_pages:
+            play music "music/Infocalypse_-_Spontaneous_Salmon.mp3"
+            scene bg hallway
+            "I left the classroom,"
+            scene bg science room
+            "running to the science club room to fetch Aoi,"
+            scene bg hallway
+            "then"
+            scene bg music room
+            "to the music room, to coordinate with Kuroneko."
+            scene bg hallway
+            "After that,"
+            scene bg track
+            "To the track, to get Koneko-chan."
+            scene bg hallway
+            "Kuroneko provided us with robes, and told us to hide in the woods near the lodge, and to be ready at midnight."
+            scene bg street
+            "Kuroneko went ahead, and the rest of us waited at the arcade."
+            scene bg arcade
+            show koneko at right
+            koneko "..."
+            "Koneko stared at the robe as if to say, 'is this really necessary?'"
+            show aoi robe at left
+            aoi "Ai-chan, guess whoooo~"
+            ai "... I guess it'll do a good job of hiding your identity once it gets dark, assuming you don't squee too much."
+            show aoi robe hearteyes at left
+            aoi "Squee~~~~"
+            show koneko pout at right
+            koneko "..."
+            ai "Are you gonna have any of that squid? We won't really have a chance to have a proper dinner."
+            koneko "... I don't want to touch anything with tentacles."
+            ai "... Fair enough."
+            aoi "More for meeee"
+            "Aoi shoveled the entire basket of dried squid into her mouth."
+            show aoi robe pout at left
+            aoi "My tummy hurts..."
+            "An alarm on my phone went off."
+            ai "Alright, time to go."
+            scene bg street dark
+            "We went down the block & hid in the woods by the lodge. We watched people pull into the convenience store parking lot & leave."
+            jump ritual
 label clean_classroom:
     play music "music/Infocalypse_-_lost_staircase.mp3"
     "The classroom isn't particularly dirty."
