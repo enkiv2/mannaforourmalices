@@ -13,7 +13,7 @@ label credits:
     scene bg black with dissolve
     centered "{cps=5}{color=#fff}Character art inking & coloring: John Ohno{/color}{/cps}"
     scene bg black with dissolve
-    centered "{cps=5#{color=#fff}Background art: {a=http://mastodon.social/@cryptovexillologist}{color=#fff}Cryptovexillologist{/color}{/a}{/color}{/cps}"
+    centered "{cps=5}{color=#fff}Background art: {a=http://mastodon.social/@cryptovexillologist}{color=#fff}Cryptovexillologist{/color}{/a}{/color}{/cps}"
     scene bg black with dissolve
     centered ""
     scene bg black with dissolve
