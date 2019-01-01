@@ -104,7 +104,60 @@ label halloween:
     if kuroneko_unstuck_in_time:
         if kuroneko_unstuck_first_time:
             jump lodge_halloween
-    comment "XXX fill in morning"
+    n "Jesus fuck, just when I think I understand how this time shit works..."
+    ai "If I said I'll go, then I'll go."
+    show aoi nekomimi hearteyes at right
+    aoi "Yay~"
+    show aoi nekomimi blush at right
+    "She grabs my arm and clings to it."
+    kuroneko "We might not be able to overthrow our oppressors, but we might as well extort candy out of them."
+    ai "I don't think they're making that much of an investment..."
+    kuroneko "They're offering sweets in exchange for PR. Taking their candy and continuing to hate them is good praxis."
+    ai "If you say so."
+    "The teacher entered the room."
+    ai "Hey, Aoi, time to let go."
+    show aoi nekomimi pout at right
+    aoi "But I need to recharge my Ai-power~~~"
+    show aoi nekomimi hearteyes at right
+    aoi "It's triple the potency of regular power~~~"
+    "Class rep" "Stand!"
+    show aoi nekomimi pout at right
+    "Aoi reluctantly let go."
+    hide aoi
+    hide kuroneko
+    "Class rep" "Bow!"
+    "Teacher" "Be seated."
+    "Teacher" "It looks like everyone is present."
+    "I looked around. Shironeko & Umeji-san were missing."
+    "Teacher" "We'll continue from where we left off last week concerning the formation of the modern diet."
+    "As the teacher droned on, I got a bit of deja-vu. I had heard this lecture before."
+    n "If I already lived through this lecture... this must be last Halloween."
+    n "{b}It's October 31st of 2011, you dimwit. If you needed to know you could have asked.{/b}"
+    n "Sorry, I keep forgetting there's another me in this head."
+    n "{b}Damn right there is. You're just squatting, but I have to live here, so don't fuck it up.{/b}"
+    n "If I do, it'll just reset anyway."
+    n "{b}How do you know? Maybe when you leave I just keep on living whatever life you left me with.{/b}"
+    n "True, but... Come to think of it, I usually die..."
+    n "{b}...{/b}"
+    n "My own past self, giving me the cold shoulder."
+    n "{b}...{/b}"
+    n "Hey, how about this? I will fill in the answers for the pop quiz today."
+    n "{b}Will you also not kill me?{/b}"
+    n "I can't promise I won't kill you."
+    n "{b}...{/b}"
+    n "It's not my fault. The world is full of unexpected danger for some reason. Blame it on the misfortune of your birth."
+    "Teacher" "Akagi, are you listening?"
+    ai "I'm sorry, could you repeat the question?"
+    "Teacher" "Who was the chairman of the constitution research association in 1945?"
+    ai "Ummm..."
+    n "{b}Hey, I thought you were gonna ace the quiz?{/b}"
+    n "I last studied this material six months ago..."
+    "Teacher" "Sit down, Akagi."
+    "Teacher" "Fujin--"
+    "Just then, the bell rang."
+    "Teacher" "I guess you're off the hook. The answer was Suzuki Yasuzo. Make sure you all read the book {i}before{/i} class next time."
+    "He left the room."
+    comment "XXX fill in second class & lunch period"
     jump halloween_afternoon
 label halloween_afternoon:
     scene bg classroom halloween
