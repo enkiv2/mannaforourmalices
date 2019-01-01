@@ -2,7 +2,7 @@
 label credits:
     scene bg black
     play music "music/Infocalypse_-_Hawkhead_Falconer.mp3"
-    centered "Story: {a=http://www.lord-enki.net}John Ohno{/a}"
+    centered "{color=#fff}Story: {a=http://www.lord-enki.net}John Ohno{/a}"
     scene bg black
     centered "Music: {a=http://infocalypse.nfshost.com}John Ohno / Infocalypse{/a}"
     scene bg black
