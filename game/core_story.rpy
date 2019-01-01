@@ -471,7 +471,7 @@ label afternoon_classes:
         "Deliver printouts":
             jump deliver_printouts
         "Disrupt the ritual" if seen_missing_pages:
-            play music "music/Infocalypse_-_Spontaneous_Salmon.mp3"
+            play music "music/Spontaneous Salmon.mp3"
             scene bg hallway
             "I left the classroom,"
             scene bg science room
