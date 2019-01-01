@@ -81,6 +81,6 @@ label festival:
     "{b}Pop pop pop{/b}"
     "{b}BOOM{/b}"
     scene splash fireworks
-    pause 23
+    pause 2
     $ achievement.grant("Tama-ya!")
     jump credits
