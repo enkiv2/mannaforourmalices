@@ -205,6 +205,21 @@ label lodge_halloween:
     ai "..."
     $ kuroneko_unstuck_first_time2 = False
     $ seen_missing_pages = True
+    menu:
+       "Invert the Janus head":
+           if halloween_janus_head_inverted:
+               $ halloween_janus_head_inverted = False
+               scene bg altar
+           else:
+               $ halloween_janus_head_inverted = True
+               scene bg altar inverted
+       "Destroy the altar":
+           "I pick up the bust above my head and smash it down on the altar, destroying the diagram drawn there. The bust is now in pieces."
+           ai "Alright. Let's head back."
+           $ altar_destroyed = True
+           jump halloween_afternoon
+       "Nevermind":
+           $ pass
     ai "We ought to get back."
     jump halloween_afternoon
 label show_to_janus_bust:
@@ -252,6 +267,8 @@ label show_to_janus_bust:
            "I pick up the bust above my head and smash it down on the altar, destroying the diagram drawn there. The bust is now in pieces."
            ai "Alright. Let's head back."
            $ altar_destroyed = True
+           jump afternoon_classes
+       "Nevermind":
            jump afternoon_classes
 label invert_head:
     if janus_head_inverted:
