@@ -388,7 +388,7 @@ label find_books:
             jump lunch_library
 label lunch_roof:
     scene bg roof
-    play "music/Infocalypse_-_Fingernails.mp3"
+    play music "music/Infocalypse_-_Fingernails.mp3"
     "It's cold up here. The wind has knives and an intent to kill."
     show kuroneko pout
     "Or maybe the intent to kill is Kuroneko's. She's leaning against the railing, glaring down into the distance."
