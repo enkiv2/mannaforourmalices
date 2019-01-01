@@ -203,6 +203,7 @@ label lodge_halloween:
     ai "You understand their metaphysics pretty well. Do you think the sacrifice is necessary?"
     kuroneko "You and I needed to be killed to transmigrate. It stands to reason that stopping time travel requires as much energy as starting it."
     ai "..."
+    $ kuroneko_unstuck_first_time2 = False
     $ seen_missing_pages = True
     ai "We ought to get back."
     jump halloween_afternoon
@@ -239,6 +240,8 @@ label show_to_janus_bust:
            ai "Should what?"
            kuroneko "Should end up on the far side of the year wheel."
            kuroneko "OK, time to get back to class."
+           $ kuroneko_unstuck_first_time2 = True
+           $ kuroneko_unstuck_first_time = False
            jump afternoon_classes
    menu:
        "Pick up the knife":

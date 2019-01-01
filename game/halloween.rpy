@@ -102,7 +102,7 @@ label halloween:
     ai "Halloween? But it's..."
     "The board says 10/31."
     if kuroneko_unstuck_in_time:
-        if kuroneko_unstuck_first_time:
+        if kuroneko_unstuck_first_time2:
             jump lodge_halloween
     n "Jesus fuck, just when I think I understand how this time shit works..."
     ai "If I said I'll go, then I'll go."
