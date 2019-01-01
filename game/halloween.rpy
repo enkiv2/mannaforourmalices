@@ -199,6 +199,24 @@ label yakuza_party:
     show kuroneko pout
     kuroneko "Sure is. This is that precise hive of scum and villany."
     kuroneko "Aoi-san may have weight to throw around, but I don't think she can get it forgiven on her own."
+    menu:
+        "I wasn't planning on using Aoi-san's weight":
+            show aoi nekomimi blush at left
+            aoi "Seventy percent of my body weight is my love for youuu~~"
+            ai "That's why you should stay here while I take matters into my own hands."
+            kuroneko "What are you going to do? You're only a teenage girl, and this place is full of professional gangsters!"
+            ai "It has been revealed to me by the secret chiefs of the world that I am sexier than Buddha and harder than Jesus." 
+            ai "So long as there hope between the stars, I cannot die."
+            ai "That is why I admired the ideal."
+            ai "I can't stray from my path for those I've left behind."
+            ai "Let's Gekiga INNNNNN~"
+            "Inspired by my own words, I rushed the curtain, and Taro sweeped my legs with a surprisingly elegant motion."
+            "As I fell, my head wacked the edge of a table."
+            "The tremor of my fall knocked an antique sword off the wall. The sheath, mounted below it, remained. But, the sword, perfectly weighted, sank through my chest and embedded itself in the floor."
+            "The last thing I remember seeing is my friends' faces staring at me worryingly. Aoi took off her cat ears and put them on my head."
+            jump death
+        "You're right":
+            $ pass
     if knows_about_yipi:
         if koneko_unstuck_in_time:
             ai "Not on her own."
