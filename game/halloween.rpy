@@ -172,7 +172,7 @@ label yakuza_party:
 # koneko complains about how icky their brains are / how disgusting it is to connect to someone telepathically
 # none of the girls are wearing a costume, but aoi is wearing cat ears
     scene bg yakuza halloween party
-    play "music/Infocalypse_-_Paranoiac_Critical__Ancient_and_Accepted_mix_.mp3"
+    play music "music/Infocalypse_-_Paranoiac_Critical__Ancient_and_Accepted_mix_.mp3"
     "There's a mix of teens like us & permed low-level yakuza, mingling. Few are costumed."
     "One hulking gorilla of a man in a poor-fitting black pinstripe suit, bowtie, and waistcoat stands in front of a curtain in the corner, looking uncomfortable. His eyes widen when he sees Aoi."
     "Gorilla yakuza" "Mistress Tomoe!"
@@ -202,7 +202,7 @@ label yakuza_party:
     kuroneko "Aoi-san may have weight to throw around, but I don't think she can get it forgiven on her own."
     menu:
         "I wasn't planning on using Aoi-san's weight":
-            play "music/Infocalypse_-_Grudge.mp3"
+            play music "music/Infocalypse_-_Grudge.mp3"
             show aoi nekomimi blush at left
             aoi "Seventy percent of my body weight is my love for youuu~~"
             ai "That's why you should stay here while I take matters into my own hands."

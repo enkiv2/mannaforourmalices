@@ -178,6 +178,7 @@ label zeus_info:
             "I hurry away before Kuroneko notices I've pranked her."
             jump afternoon_classes
 label lodge_halloween:
+    play music "music/Infocalypse_-_Doctor_Bread.mp3"
     kuroneko "Come along, then. We'd better check for those pages, quick."
     scene bg hallway
     "She leads me downstairs..."
@@ -206,6 +207,7 @@ label lodge_halloween:
     ai "We ought to get back."
     jump halloween_afternoon
 label show_to_janus_bust:
+   play music "music/Infocalypse_-_Doctor_Bread.mp3"
    kuroneko "Come along, then."
    scene bg hallway
    "She leads me downstairs..."

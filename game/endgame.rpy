@@ -1,6 +1,6 @@
 # The climax & endings
 label ritual:
-    play music "music/Infocalypse_-_Old_World_Order.mp3" fadein 5
+    play music "music/Infocalypse_-_Dry_Bachelors.mp3" fadein 5
     scene bg oss exterior night
     "As planned, Kuroneko met us in the convenience store bathroom with dark woolen robes. We put them on and then waited until a crowd of similarly-robed cultists walked past."
     "We hovered in the back, near the lodge's service door, as the cultists formed a rough ring around the magic circle and Kuroneko took her place in the center."
@@ -12,6 +12,7 @@ label ritual:
         "Father Nikolai" "So long as you continue the ritual, even if you perish, your soul shall persist in space and be ressurrected infinitely. If the ritual fails, your soul shall be forfeit!"
         "More shots rang out, clearer now."
     "Fother Nikolai" "Begin the chant."
+    play music "music/Infocalypse_-_Old_World_Order.mp3" fadein 5
     "Kuroneko readied her violin and began playing."
     "Cultists" "I call you to life, oh mysterious forces!"
     if debt_erased:
@@ -29,6 +30,7 @@ label ritual:
     "I smashed it against the Janus statue, and the choking claustrophobic feeling, that staleness in the air that had creeped up on me slowly, instantly disappated."
     $ altar_destroyed = True
     scene bg oss exterior night
+    play music "music/Infocalypse_-_They_Do_Not_Have_Any_Insides.mp3"
     show kuroneko robe
     "The merry little dances of the airborne grasses became manic spins, and gusts like huge fists shoved cultists down or sent them up."
     "Kuroneko ducked into the lodge. The dagger was still squirming against my hand."
@@ -152,10 +154,10 @@ label endgame_aliens:
     ai "Tell them to take the drugs from the military facility they trashed and used them on the clones in that basement"
     ai "Their hippocampuses"
     show kuroneko robe at right
-    kuroneko "hippocami"
+    kuroneko "Hippocampi"
     ai "fuck you, hippocampuses. Their hippocampuses ae fine but their cerebellums"
-    kuroneko "cerebella"
-    ai "are underclocked. Their memory banks are functional but empty. They're already being used for organ storage so just use their brains too"
+    kuroneko "Cerebella"
+    ai "are underclocked. Their memory banks are functional but empty. They're already being used for organ storage so just use their brains too."
     kuroneko "They say okay"
     ai "Alright i'm doing this"
     ai "T guess this is the end of my dream of a life full of junk food and heavy drinking"
@@ -224,6 +226,7 @@ label aoi_bad_end:
 
 label fujinomiya_bad_end:
     scene bg street dark
+    play music "music/honey.mp3"
     "Bruised but giddy, we made our way down the street to the Casa Fujinomiya."
     show kuroneko robe
     kuroneko "We deserve to treat ourselves!"
@@ -235,6 +238,7 @@ label fujinomiya_bad_end:
     ai "Ahh, Koneko-chan, you're so earnest!"
     "I put my arm around her and bring her in for a big smooch on the head."
     kuroneko "Wait a second."
+    play music "music/Infocalypse_-_Doctor_Bread.mp3"
     "Everyone slows down, but we're still too giddy to stop."
     "Koneko goes stiff and I remove my arm from her shoulder."
     scene bg fujinomiya household dark
@@ -278,6 +282,7 @@ label fujinomiya_bad_end:
     "We turned the corner and there was too much blood."
     "Yakuza enforcer" "Looks like we've caught two more little kittens."
     "He lifted his bat."
+    play music "music/Infocalypse_-_Harvest.mp3"
     scene bg black
     pause 0.1
     scene bg white
