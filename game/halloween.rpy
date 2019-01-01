@@ -216,7 +216,7 @@ label yakuza_party:
             "As I fell, my head wacked the edge of a table."
             "The tremor of my fall knocked an antique sword off the wall. The sheath, mounted below it, remained. But, the sword, perfectly weighted, sank through my chest and embedded itself in the floor."
             show aoi pout at left
-            show koneko pout
+            show koneko pout at right
             "The last thing I remember seeing is my friends' faces staring at me worryingly. Aoi took off her cat ears and put them on my head."
             jump death
         "You're right":
@@ -294,6 +294,7 @@ label yakuza_party:
     ai "No complaining! Come on."
     show aoi nekomimi
     aoi "Bye Fujinomiya-san! Bye other Fujinomiya-san!"
+    play music "music/honey.mp3"
     scene bg street dark
     show aoi nekomimi blush
     "Despite all her complaints, once she was out the door, she happily clung to my arm."
