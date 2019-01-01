@@ -248,6 +248,11 @@ label show_to_janus_bust:
            jump pick_up_knife
        "Invert the Janus head":
            jump invert_head
+       "Destroy the altar":
+           "I pick up the bust above my head and smash it down on the altar, destroying the diagram drawn there. The bust is now in pieces."
+           ai "Alright. Let's head back."
+           $ altar_destroyed = True
+           jump afternoon_classes
 label invert_head:
     if janus_head_inverted:
         $ janus_head_inverted = False
