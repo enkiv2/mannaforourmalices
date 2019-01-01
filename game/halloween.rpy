@@ -213,6 +213,8 @@ label yakuza_party:
             "Inspired by my own words, I rushed the curtain, and Taro sweeped my legs with a surprisingly elegant motion."
             "As I fell, my head wacked the edge of a table."
             "The tremor of my fall knocked an antique sword off the wall. The sheath, mounted below it, remained. But, the sword, perfectly weighted, sank through my chest and embedded itself in the floor."
+            show aoi pout at left
+            show koneko pout
             "The last thing I remember seeing is my friends' faces staring at me worryingly. Aoi took off her cat ears and put them on my head."
             jump death
         "You're right":
