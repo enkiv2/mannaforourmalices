@@ -446,6 +446,22 @@ label afternoon_classes:
     # TODO: add more variation to this section, based on flags, & beef it up / add more content
     scene bg classroom
     "The first period after lunch was English."
+    if has_knife:
+        if aoi_unstuck_in_time:
+            $ pass
+        else:
+            "The knife is restless, and Aoi's closeness makes it wriggle in my hand."
+            menu:
+                "Stab Aoi":
+                    "I give in, and let the knife work."
+                    "Despite myself, my mouth contorted into a manic grin as the blood and eye fluid made a warm mess out of my face."
+                    "People rushed in and circled around the spectacle, but I was already collapsing into a heap atop Aoi's crumpled body."
+                    $ aoi_unstuck_in_time = True
+                    jump death
+                "Don't stab Aoi":
+                    "I held the knife tightly, hiding it under my skirt."
+                    "Aoi looked at me worriedly, and I gave her a sharp glance. She looked away."
+                    "The knife, frustrated, cut little circles in my thigh. I held my tongue and focused on keeping it to heel."
     "The bell rang and the teacher came in."
     "He was pretty young, and a foreigner. His Japanese was shit, but since he was teaching an immersion-oriented English class it wasn't too much of a problem."
     "English Teacher" "{k=2}Good morning, class!{/k}"
@@ -470,6 +486,14 @@ label afternoon_classes:
             jump clean_classroom
         "Deliver printouts":
             jump deliver_printouts
+        "Stab Koneko" if has_knife and not kuroneko_unstuck_in_time:
+            scene bg hallway
+            "The knife practically dragged me downstairs."
+            scene bg track
+            "I walked out onto the track, a direct line to where Koneko was running on the far side."
+            "As she passed, the blade's cuts made festive streamers of crimson blood."
+            "She picked up speed, trying to escape, but a knick is all you need from this blade, and soon the same torpor that had made her stumble and collapse was also sucking my soul down into the outside of time."
+            jump death
         "Disrupt the ritual" if seen_missing_pages:
             play music "music/Spontaneous Salmon.mp3"
             scene bg hallway
@@ -629,6 +653,7 @@ label death:
                 n "Jesus fuck. [num_deaths] times? Really?"
             n "People are only supposed to die once, you know!"
     $ num_deaths += 1
+    $ has_knife = False
     if altar_destroyed:
         jump bad_end
     jump rebirth
