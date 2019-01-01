@@ -671,6 +671,8 @@ label rebirth:
     $ achievement.grant("Stabbed in the back")
     if in_2011:
         if halloween_janus_head_inverted:
+            $ pass
+        else:
             $ in_2011 = False
     else:
         if janus_head_inverted:
