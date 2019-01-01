@@ -1,5 +1,5 @@
 # Ending credits
-define credit = Character(None, kind=nvl_narrator, what_prefix="{center}{cps=2}{b}{size=72}", what_suffix="{/size}{/b}{/cps}\n{vspace=160}{/center}")
+define credit = Character(None, kind=nvl_narrator, what_prefix="{cps=2}{b}{size=72}", what_suffix="{/size}{/b}{/cps}\n{vspace=160}", xalign=0.5, yalign=0.5)
 label credits:
     scene bg black
     play music "music/Infocalypse_-_Hawkhead_Falconer.mp3"

@@ -67,6 +67,7 @@ label festival:
     shironeko "You underestimate me. No, I sold them back to the proprietor for double what I paid to shoot."
     hide mimi
     hide shironeko
+    hide aoi
     show shironeko yukata
     show kuroneko yukata pout at left
     koneko "Anee, you're rotten."
