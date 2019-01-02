@@ -161,6 +161,7 @@ label trade_info_mimi:
         n "I had assumed that the notebook had been here for years, because it was so old. But if somebody's moving around this evidence..."
         ai "If I find it, I'll let you know."
         $ knows_about_missing_lab_notebook = True
+    jump dont_trade_info_mimi
 label dont_trade_info_mimi:
     ai "Well, I should get back to the classroom. Aoi's going to get suspicious."
     mimi "Thank you for keeping her happy."
