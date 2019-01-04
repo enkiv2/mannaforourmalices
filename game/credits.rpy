@@ -17,7 +17,7 @@ label credits:
     scene bg black with dissolve
     centered ""
     scene bg black with dissolve
-    centered "{cps=2}{color=#fff}A {/color}{color=#f00}D{color=#fa0}o{color=#ff0}u{color=#0f0}b{color=#00f}l{color=#f0f}e {color=#f00}M{color=#0f0}o{color=#ff0}j{color=#f0f}o{color=#fff} Production{/color}{/cps}"
+    centered "{cps=2}{color=#fff}A {/color}{color=#f00}D{/color}{color=#fa0}o{/color}{color=#ff0}u{/color}{color=#0f0}b{/color}{color=#00f}l{/color}{color=#f0f}e {/color}{color=#f00}M{/color}{color=#0f0}o{/color}{color=#ff0}j{/color}{color=#f0f}o{/color}{color=#fff} Production{/color}{/cps}"
     $ achievement.grant("Complete")
     window show
     return
