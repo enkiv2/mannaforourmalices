@@ -104,7 +104,7 @@ label trade_info_mimi_kuroneko_books:
     mimi "The one on the left with the six circles is the logo for the Order of the Seers of Sophia, or the O∴S∴S. That symbol with the three dots means they have, or claim to have, the \"mason word\"."
     mimi "They're a pseudo-masonic occult society along the same lines as the Order of the Golden Dawn. In fact, they claim that the leader of their society is the proper outer head of the Golden Dawn, and they also claim to be the true lineage of the Anthrosophical and Theosophical societies."
     mimi "Neither claim is taken seriously by scholars. Aside from an obsession with the early 20th century Russian composer Alexander Scriabin, the O∴S∴S has nothing to do with Anthrosophy."
-    mimi "Instead, it seems to be some kind of cult created out of whole cloth by their founder, a former Soviet music student who currently goes by the name Father Nikolai."
+    mimi "Instead, it seems to be some kind of cult created out of whole cloth by their founder, a former Soviet music student who currently goes by the names Father Nikolai and Frater Zeus."
     ai "The fuck is a pseudo-masonic?"
     mimi "Pseudo-masonic means something that appropriates elements of freemasonry. It's pretty common with western occult groups."
     mimi "Usually the elements they appropriate are things like graded initiation --"
