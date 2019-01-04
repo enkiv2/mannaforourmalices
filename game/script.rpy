@@ -1,4 +1,5 @@
 ###################### SCRIPT
+# Manna for our Malices (c) 2017-2019 John Ohno
 # The game starts here.
 label start:
     python:
