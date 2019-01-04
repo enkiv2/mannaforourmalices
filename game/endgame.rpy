@@ -137,7 +137,7 @@ label endgame_aliens:
     play music "music/Infocalypse_-_Grudge.mp3"
     ai "Koneko, can you contact the Others?"
     koneko "Yes, but..."
-    ai "Tell them i can give them all the headspace they need if they open a portal from here to the basement of the yomipoly biomedical research lab"
+    ai "Tell them I can give them all the headspace they need if they open a portal from here to the basement of the YomiPoly biomedical research lab"
     aoi "You knew."
     "The portal opened behind Aoi"
     scene bg oss exterior night collapse portal
@@ -160,7 +160,7 @@ label endgame_aliens:
     ai "are underclocked. Their memory banks are functional but empty. They're already being used for organ storage so just use their brains too."
     kuroneko "They say okay"
     ai "Alright i'm doing this"
-    ai "T guess this is the end of my dream of a life full of junk food and heavy drinking"
+    ai "I guess this is the end of my dream of a life full of junk food and heavy drinking."
     "I steady the knife and try not to look at the uncomprehending eyes of my doppelganger as I sink the blade into her neck."
     "The wind clears and the cloud cover disappates as fresh, warm blood runs down my hands and drips from my elbows, caking the inside of my robe."
     ai "I guess that's that, then."
