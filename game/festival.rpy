@@ -78,6 +78,7 @@ label festival:
     show mimi yukata at right
     mimi "It does?"
     "Just then, all the stall lights went out."
+    play sound "sfx/fireworks.wav"
     "{b}Pop pop pop{/b}"
     "{b}BOOM{/b}"
     window hide
