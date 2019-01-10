@@ -15,6 +15,7 @@ label credits:
     scene bg black with dissolve
     centered "{cps=5}{color=#fff}Background art: {a=http://mastodon.social/@cryptovexillologist}{color=#fff}Cryptovexillologist{/color}{/a}{/color}{/cps}"
     scene bg black with dissolve
+    centered "{cps=5}{color=#fff}Sound effect: \"Fireworks, Standard, A.wav\" by InspectorJ (www.jshaw.co.uk) of Freesound.org{/color}{/cps}"
     centered ""
     scene bg black with dissolve
     centered "{cps=2}{color=#fff}A {/color}{color=#f00}D{/color}{color=#fa0}o{/color}{color=#ff0}u{/color}{color=#0f0}b{/color}{color=#00f}l{/color}{color=#f0f}e {/color}{color=#f00}M{/color}{color=#0f0}o{/color}{color=#ff0}j{/color}{color=#f0f}o{/color}{color=#fff} Production{/color}{/cps}"
