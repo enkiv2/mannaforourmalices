@@ -1,8 +1,6 @@
 ######################### CHARACTER DEFINITIONS
 
-# The 'comment' character is for in-game reminders of TODO issues, during dev
-# Remember to remove it before shipping to make sure we have the script completed!
-define comment = Character("Comment")
+
 define quote = nvl_narrator
 
 # Ai has two character objects: 'n', used for internal monologue, and 'ai', 

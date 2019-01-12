@@ -8,9 +8,8 @@ label start:
         if not keycode:
             keycode="".join([str(random.choice(range(0, 10))),str(random.choice(range(0, 10))),str(random.choice(range(0, 10))),str(random.choice(range(0, 10)))]) 
     #quote "DEBUG: [keycode]"
-    $ renpy.movie_cutscene("trailer.avi", delay=26, loop=0)
     if not persistent.saw_trailer:
-        $ renpy.movie_cutscene("trailer.avi")
+        $ renpy.movie_cutscene("trailer.avi", delay=26, loops=0)
         $ persistent.saw_trailer = True
     play music "music/Infocalypse_-_yesterday_the_shadows_grew_again.mp3"
     window hide
