@@ -467,7 +467,45 @@ label afternoon_classes:
     "English Teacher" "{k=2}Good morning, class!{/k}"
     "Class" "{k=2}Good morning, sensei{/k}"
     "English Teacher" "{k=2}Please open your textbooks to page 68. We'll be covering prepositions.{/k}"
-    "The rest of the afternoon classes came and went without incident" # XXX this is crap
+    "Sometime during English class, I dozed off, and only awoke partway into math, when being called upon."
+    "Math Teacher" "Akagi, if you're confident enough in your abilities that you are willing to sleep through my lessons, then please demonstrate how to solve this for the class."
+    "The problem wasn't one from homework, and involved topics we hadn't yet covered, but I had read ahead in the book slightly so it looked familiar."
+    "With some difficulty, I solved it."
+    "The teacher deflated slightly."
+    "Math Teacher" "Tomoe, can you explain Akagi's solution?"
+    n "Had to find somebody to pick on, huh?"
+    show aoi pout
+    aoi "Ummm~~~"
+    "Math Teacher" "Go on. You weren't paying attention either."
+    aoi "Ai-chan, how did you do it~~~"
+    ai "Well..."
+    hide aoi
+    "Math Teacher" "Alright, fine. Explain, Akagi."
+    "I made something up about partial integration. It must not have been totally correct, but what I described was confused enough that the teacher somehow saw a correct answer somewhere in it."
+    "Math Teacher" "Good. Did everyone follow that?"
+    n "I guess that wasn't any less clear than his usual explanations, though."
+    "Apparently satisfied, he didn't pick on me for the rest of the period. While I didn't fall asleep again, I was not entirely awake."
+    if died:
+        n "Dying really takes it out of ya."
+    "After the end of the class, a few students came over to try to get a clearer explanation, and when they left, Aoi came around."
+    show aoi
+    aoi "Ai-chan, how did you do thaaat?"
+    if aoi_unstuck_in_time:
+        ai "I would have expected you to remember, given the number of times you've heard me explain it."
+        aoi "I don't remember at aaaall~~~"
+        ai "I guess that's in-character for you."
+    else:
+        ai "Magic!"
+        aoi "Reeealy! I didn't know you knew magic, Ai-chan!"
+        aoi "Cast a spell on me!"
+        aoi "Make it a looooove spell~~~"
+        ai "I don't think you need any more of that."
+        aoi "I can always use more Ai-love~"
+        ai "If I cast a love spell on you, it would give you more Aoi love, not more Ai-love."
+        show aoi pout
+        aoi "But I'm already 80%% love."
+        n "It's growing?!"
+    hide aoi
     "Finally, the bell rang."
     "I was about to leave until..."
     "Teacher" "Akagi."
