@@ -16,7 +16,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "alpha"
+define config.version = "1.0"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -167,7 +167,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "MannaforourMalices-1498680574"
+define config.save_directory = None
 
 
 ## Icon ########################################################################
