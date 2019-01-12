@@ -8,7 +8,7 @@ label start:
         if not keycode:
             keycode="".join([str(random.choice(range(0, 10))),str(random.choice(range(0, 10))),str(random.choice(range(0, 10))),str(random.choice(range(0, 10)))]) 
     #quote "DEBUG: [keycode]"
-    $ renpy.movie_cutscene("trailer.avi")
+    $ renpy.movie_cutscene("trailer.avi", delay=26, loop=0)
     if not persistent.saw_trailer:
         $ renpy.movie_cutscene("trailer.avi")
         $ persistent.saw_trailer = True
