@@ -1,4 +1,5 @@
 ######################## STATUS FLAGS
+$ persistent.saw_trailer = False
 # Ai route
 define died = False
 $ achievement.register("Stabbed in the back")
