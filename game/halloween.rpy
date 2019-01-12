@@ -157,11 +157,77 @@ label halloween:
     "Just then, the bell rang."
     "Teacher" "I guess you're off the hook. The answer was Suzuki Yasuzo. Make sure you all read the book {i}before{/i} class next time."
     "He left the room."
-    comment "XXX fill in second class & lunch period"
+    if not kuroneko_unstuck_in_time:
+        show kuroneko at left
+        kuroneko "Wow, Ai. You're usually on top of your studies, but you really boned yourself there. Have you taken up a life of vice?"
+        show aoi nekomimi pout at right
+        aoi "Yeah, you never answer questions wrong in class~"
+        kuroneko "I guess it was inevitable, considering..."
+        ai "Don't bring it up."
+        aoi "Poor Ai-chan~"
+        show kuroneko smile at left
+        kuroneko "What tragic fate befell you, to cast you down so low?"
+        aoi "Tell us~~"
+        ai "Aoi, you would know if I had a secret life of vice."
+        aoi "No I wooouldn't~~ That's why it's a secret!"
+        ai "No, I mean we're basically never apart. I don't have time to keep secrets you're not privy to."
+        kuroneko "Was it a tragic fate, or did the mask become your face, as you fulfilled the role you put on once before..."
+        ai "I told you not to bring it up... One does not care to dwell on the mistakes of youth."
+        kuroneko "It was only mere months ago that young, fresh-faced Akagi Ai made her high school debut!"
+        aoi "Yeah, that was some getup, Ai-chan."
+        aoi "If you wanted to bleach your hair, I would have helped you."
+        ai "A bancho doesn't bl-- you know what? I'm over it. Talk about it all you want."
+        show kuroneko pout at left
+        kuroneko "It's no fun to tease you if you're not squirming. Anyway, I didn't mean to actually piss you off..."
+    else:
+        show kuroneko pout at left
+        kuroneko "I've never had this hard a time keeping up with class in my life."
+        ai "Tell me about it."
+        kuroneko "I guess this is the inevitable result of teaching to the test."
+        ai "We all forget it as soon as the test is over."
+        show aoi nekomimi at right
+        aoi "Whatcha talkin about?"
+        kuroneko "Some of us forget before the test, too."
+    hide kuroneko
+    hide aoi
+    "The next class was chemistry."
+    scene bg hallway
+    "We were marched into the science clubroom, which while crowded, at least had supplies & a gas outlet for bunsen burners."
+    scene bg science room
+    "The teacher explained something vague about valence electrons and the difference between salts and covalent compounds, and then demonstrated something involving a magnetic stirring pill."
+    "The room was too crowded for us to do our own experiments, and anyway Aoi would probably set herself on fire again."
+    scene bg hallway
+    "We were marched back."
+    scene bg classroom halloween
+    "Then the teacher left a little early, so we were able to start lunch ahead of schedule."
+    "Once again, Aoi tried to force-feed me a duplicate of her own high-protein diet."
+    show aoi nekomimi blush
+    aoi "Say aaaaah~"
+    "I didn't have the energy to refuse."
+    ai "Aaaah"
+    aoi "Good girl!"
+    "She patted my head as I chewed the bacon-wrapped weiner squids."
+    n "What a role reversal! Does this make me 'M'?"
+    "Mimi watched us with disgust."
+    n "I know, sister. I'm working on it, OK?"
+    hide aoi
     jump halloween_afternoon
 label halloween_afternoon:
     scene bg classroom halloween
-    comment "XXX fill in afternoon"
+    "After lunch was English, which wasn't as diffcult as this morning's history."
+    "I kept up my english, and in fact probably improved it slightly, by studiously watching and rewatching every episode of UFO! with subtitles."
+    "If ever I run across a space alien from America, I will be prepared."
+    "Then came math, which was straightforward for similar reasons. Each lesson built on previous ones, at this stage, so it was harder to forget ideas from previous years."
+    "The class was antsy. It was the last period, and apparently they all wanted to head to the party, just like us."
+    "The first time I lived through this day, I didn't attend that party. I broke my promise to Aoi. That's right, I'm that kind of monster."
+    "Back then, the memories of my high school debut were fresher and so it was harder to trust my instincts in social settings."
+    "Make a mistake like that, and you'd start second-guessing yourself too."
+    "Asking yourself questsions like 'would it have been less offensive if I dressed like a sukeban?' and 'what ARE the rules against blunt weapons anyway?'"
+    "Anyhow, the teacher stood firm, and even tried to keep us a little late. But, as soon as the bell rang, people began filing out of the room. Nobody was wearing a costume except Aoi, who had kept hers on all day."
+    scene bg hallway
+    "After the crowd had dispersed, we filed out too."
+    scene bg street
+    "We met up with Kuroneko & walked down to the syndicate, a little cluster of girls trailing the larger clump like a bit of shit stuck to an ass-hair."
     jump yakuza_party
 label yakuza_party:
 # getting the yakuza to wipe debts requires Koneko to do touch telepathy, which means her arc needs to be complete
