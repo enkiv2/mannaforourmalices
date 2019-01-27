@@ -191,7 +191,9 @@ label ask_shironeko_about_oss:
     n "But, if I tell her that, she'll take it the wrong way."
     ai "You need more time? I must have overestimated you..."
     shironeko "Grrr... Ok, Ai-chan. Sit tight and watch the master."
-    comment "XXX inject more stuff"
+    "She looked back at the screen, frowning, and typed periodically, occasionally making some notes on paper."
+    "After some time, she leaned back and sighed."
+    shironeko "I hate to say it, but Yamada has me beat on this. It's almost as though they're keeping their record on paper."
     jump alien_tech
 label ask_shironeko_about_zprize:
     ai "You know the 1993 Z-Prize ceremony?"
