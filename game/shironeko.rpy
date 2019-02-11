@@ -78,6 +78,7 @@ label alien_tech:
     shironeko "Some surveillance balloons saw the soviets excavating something weird out there, and so the americans made sure one of their moles was involved in digging the thing up, reporting everything back."
     shironeko "Then, in '91 some remaining assets managed to transport a couple bits and pieces back to the US: some frozen corpses, a bit of wood, a bit of leaf."
     $ knows_about_alien_tech = True
+    achievement.grant("The truth is out there")
     jump leave_fujinomiya_residence
 label i_got_nothin:
     "I guess I can't tell her about the ghost thing..."

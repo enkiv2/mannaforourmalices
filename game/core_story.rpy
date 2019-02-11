@@ -686,7 +686,7 @@ label death:
         n "Why the hell do I keep dying?"
         if num_deaths > 2:
             n "What kind of stupid-ass chuunibyo bullshit is this?"
-            $ achievement.register("Some chuunibyo BS")
+            $ achievement.grant("Some chuunibyo BS")
             if num_deaths > 5:
                 n "If there's a god, I hope he's ready to get an earful."
                 n "Jesus fuck. [num_deaths] times? Really?"
