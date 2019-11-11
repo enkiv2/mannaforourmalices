@@ -409,6 +409,7 @@ label lunch_roof:
             "I found a spot that sheltered me somewhat from the elements and started to eat my bento."
             "Several pieces were caught by gusts and carried away to lands unknown. So it goes."
             "When I left, Kuroneko still hadn't moved from that spot."
+    play music "music/Infocalypse_-_scathing_frolic.mp3" fadein 5
     jump afternoon_classes
 label lunch_cafeteria:
     scene bg cafeteria

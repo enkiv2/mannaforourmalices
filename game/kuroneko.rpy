@@ -166,6 +166,7 @@ label kuroneko_masonry_roof:
             kuroneko "I... Uh..."
             ai "Test failed! I hereby revoke your fellow craft status!"
             "I hurry away before Kuroneko can ask me any questions."
+            play music "music/Infocalypse_-_scathing_frolic.mp3" fadein 5
             jump afternoon_classes
 
 label zeus_info:
