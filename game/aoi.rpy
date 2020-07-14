@@ -44,6 +44,7 @@ label ignore_music:
         n "If it was she who brought it."
         $ knows_aoi_took_lab_notebook = True
         $ achievement.grant("In the closet")
+        call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
         n "Anyhow, if the timeline's lining up then it's getting late and I should get home."
         scene bg hallway dark
         pause 1
@@ -102,6 +103,7 @@ label ignore_music:
     show aoi hearteyes
     aoi "You betcha!"
     $ achievement.grant("A mysterious photograph")
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
     scene bg hallway dark
     with dissolve
     jump walk_home
