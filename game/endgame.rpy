@@ -155,7 +155,7 @@ label endgame_aliens:
     ai "Their hippocampuses"
     show kuroneko robe at right
     kuroneko "Hippocampi"
-    ai "fuck you, hippocampuses. Their hippocampuses ae fine but their cerebellums"
+    ai "fuck you, hippocampuses. Their hippocampuses are fine but their cerebellums"
     kuroneko "Cerebella"
     ai "are underclocked. Their memory banks are functional but empty. They're already being used for organ storage so just use their brains too."
     kuroneko "They say okay"
