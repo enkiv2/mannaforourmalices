@@ -56,7 +56,7 @@ label visit_track:
     "Before I could say anything, she left."
     hide koneko
     $ achievement.grant("Touch telepathy")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     scene bg hallway dark
     with dissolve
     jump walk_home

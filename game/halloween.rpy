@@ -1,7 +1,7 @@
 # This is the primary file for the section of the game that occurs on Halloween of 2011
 label halloween:
     $ achievement.grant("Niaga praw emit eht od s'tel") # Warped to Halloween 2011 
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     play music "music/Infocalypse_-_vapor_intrusion.mp3"
     scene bg morning
     play sound "sfx/alarm-clock.wav"
@@ -318,7 +318,7 @@ label yakuza_party:
             "Aoi winks at Taro. Taro blushes."
             $ debt_erased = True
             $ achievement.grant("Jubilee")
-            call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+            call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
             ai "Girl, I didn't know you had it in you!"
             aoi "Had what?"
             ai "The ability and willingness to toy with a young man's heart!"

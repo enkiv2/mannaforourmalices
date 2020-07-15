@@ -79,7 +79,7 @@ label alien_tech:
     shironeko "Then, in '91 some remaining assets managed to transport a couple bits and pieces back to the US: some frozen corpses, a bit of wood, a bit of leaf."
     $ knows_about_alien_tech = True
     $ achievement.grant("The truth is out there")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     jump leave_fujinomiya_residence
 label i_got_nothin:
     "I guess I can't tell her about the ghost thing..."
@@ -251,7 +251,7 @@ label ask_shironeko_for_zprize_papers:
     shironeko "Oh man, do I ever"
     $ read_z_prize_papers = True
     $ achievement.grant("Peer review")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     jump alien_tech
 label ask_shironeko_for_keypad_code:
     ai "On the entrance to the synthetic biology lab at Yomiyama Poly's research center, there's a keypad lock. I'll bet you can't tell me what the code is."

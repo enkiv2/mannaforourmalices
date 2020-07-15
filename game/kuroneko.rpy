@@ -92,7 +92,7 @@ label music_room:
     kuroneko "Sure, Ai. Just leave me here to stew in my failure."
     extend "\nLater."
     $ achievement.grant("Some Eyes-Wide-Shut MFers")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu(save), Return()], no_action=Return())
+    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     scene bg hallway dark
     with dissolve
     jump walk_home
