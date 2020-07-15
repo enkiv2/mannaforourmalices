@@ -84,7 +84,6 @@ label music_room:
     kuroneko "The money is {i}very{/i} good."
     extend "\nI was suspicious but they told me it wasn't for an orgy or anything."
     ai "Thank god. I don't think I could bear living in a town with that kind of eyes wide shut shit going on."
-    $ knows_about_kuroneko_concert = True
     ai "Wait, did you say it was after dark?"
     extend "\nShit, I need to get home!"
     ai "My mom's gonna fucking kill me."
@@ -92,7 +91,9 @@ label music_room:
     kuroneko "Sure, Ai. Just leave me here to stew in my failure."
     extend "\nLater."
     $ achievement.grant("Some Eyes-Wide-Shut MFers")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    if knows_about_kuroneko_concert == False:
+        call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    $ knows_about_kuroneko_concert = True
     scene bg hallway dark
     with dissolve
     jump walk_home

@@ -36,7 +36,6 @@ label visit_track:
     "As soon as I touched her hand, she let out a yelp and pulled it back. I felt a weird tickle down my spine."
     koneko "You--"
     extend "\nThere are two people in your head?!"
-    $ knows_about_koneko_telepathy = True
     "..."
     ai "How do you..."
     koneko "What's g..."
@@ -56,7 +55,9 @@ label visit_track:
     "Before I could say anything, she left."
     hide koneko
     $ achievement.grant("Touch telepathy")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    if knows_about_koneko_telepathy == False:
+        call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    $ knows_about_koneko_telepathy = True
     scene bg hallway dark
     with dissolve
     jump walk_home

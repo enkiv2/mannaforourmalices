@@ -688,7 +688,8 @@ label death:
         if num_deaths > 2:
             n "What kind of stupid-ass chuunibyo bullshit is this?"
             $ achievement.grant("Some chuunibyo BS")
-            call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+            if num_deaths == 3:
+                call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
             if num_deaths > 5:
                 n "If there's a god, I hope he's ready to get an earful."
                 n "Jesus fuck. [num_deaths] times? Really?"
@@ -729,6 +730,5 @@ label bad_end:
     scene splash blood two
     centered "BAD END"
     $ achievement.grant("Bad end")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     return
     

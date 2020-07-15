@@ -85,5 +85,4 @@ label festival:
     scene splash fireworks with dissolve
     pause 2
     $ achievement.grant("Tama-ya!")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     jump credits

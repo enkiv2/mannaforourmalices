@@ -42,9 +42,10 @@ label ignore_music:
         n "And why is she hanging out in the science club room after school?"
         n "After all, I was with her until the end of classes. If the notebook wasn't here at lunch then she can't have brought it until the end of the day."
         n "If it was she who brought it."
+        if knows_aoi_took_lab_notebook == False:
+            call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
         $ knows_aoi_took_lab_notebook = True
         $ achievement.grant("In the closet")
-        call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
         n "Anyhow, if the timeline's lining up then it's getting late and I should get home."
         scene bg hallway dark
         pause 1
@@ -68,7 +69,6 @@ label ignore_music:
     "There were flow charts, drawing of molecules, and what looked like assembly diagrams for laboratory equipment."
     stop music
     "On the last page, there was a picture of what looked like a foetus in a tube."
-    $ knows_about_aoi_parents = True
     "{b}CLACK{/b}"
     "I jumped and quickly fumbled the paper back into the book, closing it."
     scene bg science room
@@ -103,7 +103,9 @@ label ignore_music:
     show aoi hearteyes
     aoi "You betcha!"
     $ achievement.grant("A mysterious photograph")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    if knows_about_aoi_parents == false:
+        call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
+    $ knows_about_aoi_parents = True
     scene bg hallway dark
     with dissolve
     jump walk_home

@@ -222,7 +222,6 @@ label aoi_bad_end:
     scene bad end aoi epilogue with fade
     "The bright street ahead became dark. Above, a carapace eclipsed the sun on long, long legs."
     $ achievement.grant("Aoi bad end")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     return
 
 label fujinomiya_bad_end:
@@ -290,5 +289,4 @@ label fujinomiya_bad_end:
     pause 0.1
     scene bg black with fade
     $ achievement.grant("Fujinomiya bad end")
-    call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     return
