@@ -720,7 +720,6 @@ label rebirth:
     else:
         if janus_head_inverted:
             $ achievement.grant("Niaga praw emit eht od s'tel") # Warped to Halloween 2011
-            call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
             $ in_2011 = True
     if in_2011:
         jump halloween
