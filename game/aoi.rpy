@@ -103,7 +103,7 @@ label ignore_music:
     show aoi hearteyes
     aoi "You betcha!"
     $ achievement.grant("A mysterious photograph")
-    if knows_about_aoi_parents == false:
+    if knows_about_aoi_parents == False:
         call screen confirm("Do you want to save?", yes_action=[ShowMenu("save"), Return()], no_action=Return())
     $ knows_about_aoi_parents = True
     scene bg hallway dark
